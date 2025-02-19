@@ -1,4 +1,4 @@
---DDL Scripts
+
 CREATE OR REPLACE EXTERNAL TABLE `just-eat-451011.just_eat_dataset.external_reviews_final`
 (
     reviewerID STRING,
@@ -20,9 +20,17 @@ OPTIONS (
   encoding = 'UTF-8'
 );
 
-
-
-CREATE OR REPLACE TABLE `just-eat-451011.just_eat_dataset.stg_reviews` AS
+CREATE OR REPLACE TABLE `just-eat-451011.just_eat_dataset.stg_reviews` (
+    reviewerID STRING NOT NULL,
+    asin STRING NOT NULL,
+    reviewerName STRING,
+    helpful ARRAY<INT64>,
+    reviewText STRING,
+    overall INT64,
+    summary STRING,
+    unixReviewTime INT64,
+    reviewDate DATE
+) AS
 WITH transformed_data AS (
     SELECT 
         CAST(reviewerID AS STRING) AS reviewerID,
@@ -40,15 +48,15 @@ WITH transformed_data AS (
         CAST(summary AS STRING) AS summary,
         CAST(unixReviewTime AS INT64) AS unixReviewTime,
 
-    
+        -- Convert 'reviewTime' from "MM DD, YYYY" to DATE and rename it to reviewDate
         PARSE_DATE('%m %d, %Y', reviewTime) AS reviewDate
 
     FROM `just-eat-451011.just_eat_dataset.external_reviews_final`
 )
 SELECT * FROM transformed_data;
 
+
 ------------------------------------Metadata--------------------------------------------------
---DDL Scripts
 CREATE OR REPLACE EXTERNAL TABLE `just-eat-451011.just_eat_dataset.external_metadata_final`
 (
     metadataid STRING,
@@ -74,22 +82,28 @@ OPTIONS (
 
 
 
-
-CREATE OR REPLACE TABLE `just-eat-451011.just_eat_dataset.stg_metadata` AS
+CREATE OR REPLACE TABLE `just-eat-451011.just_eat_dataset.stg_metadata` (
+    metadataid STRING NOT NULL,
+    asin STRING NOT NULL,
+    salesrank STRING,
+    imurl STRING,
+    categories STRING,
+    title STRING,
+    description STRING,
+    price FLOAT64,
+    related STRING,
+    brand STRING
+) AS
 WITH transformed_metadata AS (
     SELECT 
         CAST(metadataid AS STRING) AS metadataid,
         CAST(asin AS STRING) AS asin,
 
-        
         CAST(salesrank AS STRING) AS salesrank,
-        
-
         CAST(imurl AS STRING) AS imurl,
 
         -- Normalize categories, ensuring empty values are mapped correctly
         COALESCE(NULLIF(categories, ''), 'Not Mapped') AS categories,
-
         COALESCE(NULLIF(title, ''), 'Not Mapped') AS title,
         COALESCE(NULLIF(description, ''), 'Not Mapped') AS description,
 
@@ -97,12 +111,7 @@ WITH transformed_metadata AS (
         SAFE_CAST(NULLIF(price, '') AS FLOAT64) AS price,
 
         CAST(related AS STRING) AS related,
-
-
         COALESCE(NULLIF(brand, ''), 'Not Mapped') AS brand
     FROM `just-eat-451011.just_eat_dataset.external_metadata_final`
 )
 SELECT * FROM transformed_metadata;
-
-
-

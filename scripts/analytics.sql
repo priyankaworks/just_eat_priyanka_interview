@@ -18,7 +18,7 @@ WITH
     )
 SELECT *
 FROM ReviewStats
-ORDER BY year_month DESC, avg_review_rating DESC;
+ORDER BY year_month DESC, avg_review_rating DESC
 
 
 
@@ -41,4 +41,4 @@ WITH
     )
 SELECT *
 FROM ReviewStats
-ORDER BY year_month DESC, avg_review_rating DESC;
+ORDER BY year_month DESC, avg_review_rating DESC

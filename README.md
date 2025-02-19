@@ -1,1 +1,3 @@
-# just_eat_priyanka_interview
+# just_eat_interview--
+
+The scripts for ingestion, staging, curation and data quality

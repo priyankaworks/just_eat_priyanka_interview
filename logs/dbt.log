@@ -1,0 +1,239 @@
+[0m18:14:12.497460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6C70461D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6C87BE590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6C87BE380>]}
+
+
+============================== 18:14:12.513121 | b41ad8a9-8df4-45b7-be38-80ce4d051f9d ==============================
+[0m18:14:12.513121 [info ] [MainThread]: Running with dbt=1.9.2
+[0m18:14:12.513121 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\pratheepkumaar\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt init', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:14:23.552228 [debug] [MainThread]: Starter project path: A:\just_eat_usecase\localdev\lib\site-packages\dbt\include\starter_project
+[0m18:14:23.628680 [info ] [MainThread]: 
+Your new dbt project "just_eat_priyank" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:14:23.644312 [info ] [MainThread]: Setting up your profile.
+[0m18:18:57.709877 [info ] [MainThread]: Profile just_eat_priyank written to C:\Users\pratheepkumaar\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m18:18:57.726522 [debug] [MainThread]: Command `dbt init` succeeded at 18:18:57.725343 after 285.33 seconds
+[0m18:18:57.727536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6C70461D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6C87BE290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6C87C6F20>]}
+[0m18:18:57.728523 [debug] [MainThread]: Flushing usage events
+[0m18:18:58.149509 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:21:15.098699 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A06D546170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A06EEBE4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A06EEBE320>]}
+
+
+============================== 18:21:15.098699 | b9dbcd23-0db9-4b88-a203-6e11842c7fb3 ==============================
+[0m18:21:15.098699 [info ] [MainThread]: Running with dbt=1.9.2
+[0m18:21:15.098699 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\pratheepkumaar\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:21:15.134357 [info ] [MainThread]: dbt version: 1.9.2
+[0m18:21:15.134357 [info ] [MainThread]: python version: 3.10.11
+[0m18:21:15.134357 [info ] [MainThread]: python path: A:\just_eat_usecase\localdev\Scripts\python.exe
+[0m18:21:15.149763 [info ] [MainThread]: os info: Windows-10-10.0.19044-SP0
+[0m18:21:16.243466 [info ] [MainThread]: Using profiles dir at C:\Users\pratheepkumaar\.dbt
+[0m18:21:16.243466 [info ] [MainThread]: Using profiles.yml file at C:\Users\pratheepkumaar\.dbt\profiles.yml
+[0m18:21:16.243466 [info ] [MainThread]: Using dbt_project.yml file at A:\just_eat_usecase\dbt_project.yml
+[0m18:21:16.243466 [info ] [MainThread]: adapter type: bigquery
+[0m18:21:16.243466 [info ] [MainThread]: adapter version: 1.9.1
+[0m18:21:16.243466 [info ] [MainThread]: Configuration:
+[0m18:21:16.255329 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:21:16.257343 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:21:16.258457 [info ] [MainThread]: Required dependencies:
+[0m18:21:16.260461 [debug] [MainThread]: Executing "git --help"
+[0m18:21:16.321253 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:21:16.322286 [debug] [MainThread]: STDERR: "b''"
+[0m18:21:16.324262 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:21:16.325263 [info ] [MainThread]: Connection:
+[0m18:21:16.327266 [info ] [MainThread]:   method: service-account
+[0m18:21:16.328253 [info ] [MainThread]:   database: just-eat-451011
+[0m18:21:16.330254 [info ] [MainThread]:   execution_project: just-eat-451011
+[0m18:21:16.331261 [info ] [MainThread]:   schema: just_eat_dataset
+[0m18:21:16.333254 [info ] [MainThread]:   location: EU
+[0m18:21:16.334255 [info ] [MainThread]:   priority: interactive
+[0m18:21:16.336260 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:21:16.337251 [info ] [MainThread]:   impersonate_service_account: None
+[0m18:21:16.339268 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:21:16.340870 [info ] [MainThread]:   job_retries: 1
+[0m18:21:16.342868 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:21:16.344342 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m18:21:16.344911 [info ] [MainThread]:   timeout_seconds: 300
+[0m18:21:16.346929 [info ] [MainThread]:   client_id: None
+[0m18:21:16.348418 [info ] [MainThread]:   token_uri: None
+[0m18:21:16.349223 [info ] [MainThread]:   dataproc_region: None
+[0m18:21:16.349223 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m18:21:16.349223 [info ] [MainThread]:   gcs_bucket: None
+[0m18:21:16.349223 [info ] [MainThread]:   dataproc_batch: None
+[0m18:21:16.349223 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m18:21:16.889047 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:21:16.889047 [debug] [MainThread]: On debug: select 1 as id
+[0m18:21:16.889047 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:21:20.514194 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:505ee2a6-ca1b-48de-8a53-51fab53503b5&page=queryresults
+[0m18:21:23.650525 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:21:23.652541 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:21:23.654529 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <A:\just_eat_usecase\dbt_project.yml> not found
+
+[0m18:21:23.658991 [debug] [MainThread]: Command `dbt debug` failed at 18:21:23.657624 after 8.66 seconds
+[0m18:21:23.659358 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:21:23.661384 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A06D546170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A06E5DB760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0001A4490>]}
+[0m18:21:23.661384 [debug] [MainThread]: Flushing usage events
+[0m18:21:24.072314 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:37:02.121959 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A07E4524D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A07FBD6C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A07FBD6E30>]}
+
+
+============================== 12:37:02.140225 | 05072039-f265-4449-8bb8-e22d5de89c6e ==============================
+[0m12:37:02.140225 [info ] [MainThread]: Running with dbt=1.9.2
+[0m12:37:02.142227 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\pratheepkumaar\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m12:37:02.143224 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path A:\just_eat_usecase\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m12:37:02.146181 [debug] [MainThread]: Command `dbt run` failed at 12:37:02.145227 after 0.18 seconds
+[0m12:37:02.147186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A07E4524D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A07FBD6E30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A07FBD6B90>]}
+[0m12:37:02.148186 [debug] [MainThread]: Flushing usage events
+[0m12:37:02.806374 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:37:15.164166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011DFE2523E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011DFF990FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011DFF9909A0>]}
+
+
+============================== 12:37:15.170167 | cc72d5ba-83e4-4e9e-bb44-1102359f43fa ==============================
+[0m12:37:15.170167 [info ] [MainThread]: Running with dbt=1.9.2
+[0m12:37:15.172962 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\pratheepkumaar\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m12:37:15.730814 [info ] [MainThread]: dbt version: 1.9.2
+[0m12:37:15.735790 [info ] [MainThread]: python version: 3.10.11
+[0m12:37:15.738807 [info ] [MainThread]: python path: A:\just_eat_usecase\localdev\Scripts\python.exe
+[0m12:37:15.740885 [info ] [MainThread]: os info: Windows-10-10.0.19044-SP0
+[0m12:37:25.928824 [info ] [MainThread]: Using profiles dir at C:\Users\pratheepkumaar\.dbt
+[0m12:37:25.931311 [info ] [MainThread]: Using profiles.yml file at C:\Users\pratheepkumaar\.dbt\profiles.yml
+[0m12:37:25.932312 [info ] [MainThread]: Using dbt_project.yml file at A:\just_eat_usecase\dbt_project.yml
+[0m12:37:25.933310 [info ] [MainThread]: adapter type: bigquery
+[0m12:37:25.934509 [info ] [MainThread]: adapter version: 1.9.1
+[0m12:37:25.935490 [info ] [MainThread]: Configuration:
+[0m12:37:25.936490 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:37:25.937522 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m12:37:25.938491 [info ] [MainThread]: Required dependencies:
+[0m12:37:25.939490 [debug] [MainThread]: Executing "git --help"
+[0m12:37:26.007063 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:37:26.008148 [debug] [MainThread]: STDERR: "b''"
+[0m12:37:26.009149 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:37:26.011077 [info ] [MainThread]: Connection:
+[0m12:37:26.013329 [info ] [MainThread]:   method: service-account
+[0m12:37:26.016079 [info ] [MainThread]:   database: just-eat-451011
+[0m12:37:26.017920 [info ] [MainThread]:   execution_project: just-eat-451011
+[0m12:37:26.019186 [info ] [MainThread]:   schema: just_eat_dataset
+[0m12:37:26.021257 [info ] [MainThread]:   location: EU
+[0m12:37:26.023948 [info ] [MainThread]:   priority: interactive
+[0m12:37:26.025190 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m12:37:26.027728 [info ] [MainThread]:   impersonate_service_account: None
+[0m12:37:26.028824 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m12:37:26.031559 [info ] [MainThread]:   job_retries: 1
+[0m12:37:26.032648 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m12:37:26.034717 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m12:37:26.036716 [info ] [MainThread]:   timeout_seconds: 300
+[0m12:37:26.038717 [info ] [MainThread]:   client_id: None
+[0m12:37:26.039716 [info ] [MainThread]:   token_uri: None
+[0m12:37:26.042115 [info ] [MainThread]:   dataproc_region: None
+[0m12:37:26.044591 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m12:37:26.047114 [info ] [MainThread]:   gcs_bucket: None
+[0m12:37:26.049114 [info ] [MainThread]:   dataproc_batch: None
+[0m12:37:26.051253 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m12:37:27.394496 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m12:37:27.396879 [debug] [MainThread]: On debug: select 1 as id
+[0m12:37:27.399055 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:37:27.995891 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:2c48f870-9abe-4d4e-8c0d-0f224a41431e&page=queryresults
+[0m12:37:35.884225 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:37:35.891238 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:37:35.894882 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <A:\just_eat_usecase\dbt_project.yml> not found
+
+[0m12:37:35.904177 [debug] [MainThread]: Command `dbt debug` failed at 12:37:35.903179 after 20.88 seconds
+[0m12:37:35.907563 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:37:35.910282 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011DFE2523E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011D910A5ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011D910A68C0>]}
+[0m12:37:35.913456 [debug] [MainThread]: Flushing usage events
+[0m12:37:36.314086 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:41:59.700352 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DA3E56470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DA55958A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DA5594730>]}
+
+
+============================== 17:41:59.743096 | a5dd5db4-7d55-4899-8d59-4dc6a04bb255 ==============================
+[0m17:41:59.743096 [info ] [MainThread]: Running with dbt=1.9.2
+[0m17:41:59.744097 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\pratheepkumaar\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --select analytics_layer', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m17:41:59.746099 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path A:\just_eat_usecase\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:41:59.748110 [debug] [MainThread]: Command `dbt run` failed at 17:41:59.748110 after 0.22 seconds
+[0m17:41:59.749098 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DA3E56470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DA5594730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DA5596C80>]}
+[0m17:41:59.750137 [debug] [MainThread]: Flushing usage events
+[0m17:42:00.245725 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:17:58.300372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020E6CB4A1A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020E6E276560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020E6E276380>]}
+
+
+============================== 20:17:58.315997 | 1637abf6-3ea1-4963-9244-1a419b79d530 ==============================
+[0m20:17:58.315997 [info ] [MainThread]: Running with dbt=1.9.2
+[0m20:17:58.315997 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\pratheepkumaar\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt debug', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:17:58.552944 [info ] [MainThread]: dbt version: 1.9.2
+[0m20:17:58.552944 [info ] [MainThread]: python version: 3.10.11
+[0m20:17:58.552944 [info ] [MainThread]: python path: A:\just_eat_interview\localdev\Scripts\python.exe
+[0m20:17:58.552944 [info ] [MainThread]: os info: Windows-10-10.0.19044-SP0
+[0m20:18:08.869614 [info ] [MainThread]: Using profiles dir at C:\Users\pratheepkumaar\.dbt
+[0m20:18:08.869614 [info ] [MainThread]: Using profiles.yml file at C:\Users\pratheepkumaar\.dbt\profiles.yml
+[0m20:18:08.869614 [info ] [MainThread]: Using dbt_project.yml file at A:\just_eat_interview\dbt_project.yml
+[0m20:18:08.869614 [info ] [MainThread]: adapter type: bigquery
+[0m20:18:08.869614 [info ] [MainThread]: adapter version: 1.9.1
+[0m20:18:08.869614 [info ] [MainThread]: Configuration:
+[0m20:18:08.885248 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m20:18:08.886723 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m20:18:08.888181 [info ] [MainThread]: Required dependencies:
+[0m20:18:08.889725 [debug] [MainThread]: Executing "git --help"
+[0m20:18:08.943171 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:18:08.943171 [debug] [MainThread]: STDERR: "b''"
+[0m20:18:08.943171 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:18:08.943171 [info ] [MainThread]: Connection:
+[0m20:18:08.943171 [info ] [MainThread]:   method: service-account
+[0m20:18:08.959798 [info ] [MainThread]:   database: just-eat-451011
+[0m20:18:08.959798 [info ] [MainThread]:   execution_project: just-eat-451011
+[0m20:18:08.964329 [info ] [MainThread]:   schema: just_eat_dataset
+[0m20:18:08.964953 [info ] [MainThread]:   location: EU
+[0m20:18:08.966222 [info ] [MainThread]:   priority: interactive
+[0m20:18:08.967322 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m20:18:08.968360 [info ] [MainThread]:   impersonate_service_account: None
+[0m20:18:08.971229 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m20:18:08.972244 [info ] [MainThread]:   job_retries: 1
+[0m20:18:08.973228 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m20:18:08.975306 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m20:18:08.976455 [info ] [MainThread]:   timeout_seconds: 300
+[0m20:18:08.976455 [info ] [MainThread]:   client_id: None
+[0m20:18:08.976455 [info ] [MainThread]:   token_uri: None
+[0m20:18:08.976455 [info ] [MainThread]:   dataproc_region: None
+[0m20:18:08.976455 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m20:18:08.976455 [info ] [MainThread]:   gcs_bucket: None
+[0m20:18:08.988183 [info ] [MainThread]:   dataproc_batch: None
+[0m20:18:08.989188 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m20:18:09.534379 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m20:18:09.534379 [debug] [MainThread]: On debug: select 1 as id
+[0m20:18:09.534379 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:18:10.091788 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:12f65352-b49e-4c20-a9e1-1e2f810dadd7&page=queryresults
+[0m20:18:13.677081 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m20:18:13.677081 [info ] [MainThread]: [31m1 check failed:[0m
+[0m20:18:13.677081 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <A:\just_eat_interview\dbt_project.yml> not found
+
+[0m20:18:13.682988 [debug] [MainThread]: Command `dbt debug` failed at 20:18:13.682988 after 15.49 seconds
+[0m20:18:13.682988 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m20:18:13.682988 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020E6CB4A1A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020E7F6ADC00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020E7F6AFD00>]}
+[0m20:18:13.682988 [debug] [MainThread]: Flushing usage events
+[0m20:18:14.089981 [debug] [MainThread]: An error was encountered while trying to flush usage events

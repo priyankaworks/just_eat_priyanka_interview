@@ -1,0 +1,619 @@
+year_month,category,avg_review_rating,total_reviews
+2014-07,Home & Kitchen,5.0,1
+2014-07,Electronics,5.0,1
+2014-07,Health & Personal Care,4.92,12
+2014-07,Cell Phones & Accessories,4.83,6
+2014-07,Tools & Home Improvement,4.8,5
+2014-07,"Arts, Crafts & Sewing",4.6,5
+2014-07,Baby Products,4.5,4
+2014-07,Beauty,4.44,9
+2014-07,Sports & Outdoors,4.27,655
+2014-07,"Clothing, Shoes & Jewelry",4.2,8159
+2014-07,"Patio, Lawn & Garden",2.0,1
+2014-06,Toys & Games,5.0,3
+2014-06,Home & Kitchen,5.0,2
+2014-06,"Arts, Crafts & Sewing",4.67,3
+2014-06,Electronics,4.63,8
+2014-06,Sports & Outdoors,4.23,985
+2014-06,"Clothing, Shoes & Jewelry",4.18,11914
+2014-06,Beauty,4.14,14
+2014-06,Tools & Home Improvement,4.0,4
+2014-06,Automotive,4.0,2
+2014-06,Office Products,4.0,2
+2014-06,Health & Personal Care,3.97,30
+2014-06,Baby Products,3.87,15
+2014-06,Cell Phones & Accessories,3.8,5
+2014-05,Electronics,4.56,9
+2014-05,Baby Products,4.5,6
+2014-05,Tools & Home Improvement,4.5,4
+2014-05,Beauty,4.36,11
+2014-05,Cell Phones & Accessories,4.33,9
+2014-05,Health & Personal Care,4.27,41
+2014-05,"Arts, Crafts & Sewing",4.25,4
+2014-05,Sports & Outdoors,4.24,1039
+2014-05,"Clothing, Shoes & Jewelry",4.18,13029
+2014-05,Home & Kitchen,4.0,3
+2014-05,Office Products,3.0,1
+2014-05,Toys & Games,3.0,1
+2014-04,Home & Kitchen,5.0,4
+2014-04,Health & Personal Care,4.37,38
+2014-04,Beauty,4.36,11
+2014-04,Sports & Outdoors,4.26,1082
+2014-04,Tools & Home Improvement,4.25,4
+2014-04,"Arts, Crafts & Sewing",4.2,5
+2014-04,"Clothing, Shoes & Jewelry",4.19,13164
+2014-04,Electronics,4.0,1
+2014-04,Automotive,4.0,4
+2014-04,Cell Phones & Accessories,3.85,13
+2014-04,Baby Products,3.67,9
+2014-03,Tools & Home Improvement,4.46,13
+2014-03,Health & Personal Care,4.41,34
+2014-03,Electronics,4.33,3
+2014-03,"Arts, Crafts & Sewing",4.33,6
+2014-03,Toys & Games,4.25,4
+2014-03,Sports & Outdoors,4.25,1184
+2014-03,"Clothing, Shoes & Jewelry",4.22,15194
+2014-03,Baby Products,4.0,10
+2014-03,Cell Phones & Accessories,4.0,7
+2014-03,Automotive,4.0,3
+2014-03,Purchase Circles,4.0,1
+2014-03,Beauty,3.81,16
+2014-03,Home & Kitchen,3.25,4
+2014-02,CDs & Vinyl,5.0,1
+2014-02,"Arts, Crafts & Sewing",5.0,4
+2014-02,Toys & Games,5.0,1
+2014-02,Tools & Home Improvement,4.75,4
+2014-02,Beauty,4.6,15
+2014-02,Health & Personal Care,4.48,23
+2014-02,Baby Products,4.33,12
+2014-02,Electronics,4.25,4
+2014-02,Sports & Outdoors,4.23,1146
+2014-02,"Clothing, Shoes & Jewelry",4.22,14007
+2014-02,Home & Kitchen,4.0,1
+2014-02,Cell Phones & Accessories,3.88,8
+2014-02,Automotive,3.67,3
+2014-02,Office Products,1.0,1
+2014-01,CDs & Vinyl,4.67,3
+2014-01,Automotive,4.67,3
+2014-01,Health & Personal Care,4.62,45
+2014-01,Toys & Games,4.57,7
+2014-01,"Arts, Crafts & Sewing",4.55,11
+2014-01,Baby Products,4.5,4
+2014-01,Beauty,4.31,16
+2014-01,Sports & Outdoors,4.22,1478
+2014-01,"Clothing, Shoes & Jewelry",4.22,17420
+2014-01,Tools & Home Improvement,4.09,11
+2014-01,Home & Kitchen,4.0,5
+2014-01,Electronics,4.0,12
+2014-01,Cell Phones & Accessories,3.9,10
+2013-12,Home & Kitchen,5.0,2
+2013-12,Electronics,4.67,3
+2013-12,Tools & Home Improvement,4.63,19
+2013-12,"Arts, Crafts & Sewing",4.6,5
+2013-12,Beauty,4.5,12
+2013-12,Toys & Games,4.44,9
+2013-12,Health & Personal Care,4.3,47
+2013-12,"Clothing, Shoes & Jewelry",4.22,16888
+2013-12,Sports & Outdoors,4.2,1465
+2013-12,Automotive,4.14,7
+2013-12,"Patio, Lawn & Garden",4.0,1
+2013-12,Baby Products,4.0,9
+2013-12,Cell Phones & Accessories,3.56,9
+2013-11,"Arts, Crafts & Sewing",5.0,5
+2013-11,Purchase Circles,5.0,1
+2013-11,Electronics,4.78,9
+2013-11,Cell Phones & Accessories,4.5,4
+2013-11,Health & Personal Care,4.39,33
+2013-11,Toys & Games,4.29,7
+2013-11,Sports & Outdoors,4.26,1119
+2013-11,"Clothing, Shoes & Jewelry",4.21,13381
+2013-11,Beauty,4.08,12
+2013-11,Tools & Home Improvement,4.0,13
+2013-11,Home & Kitchen,4.0,1
+2013-11,Baby Products,3.4,5
+2013-11,Automotive,3.0,1
+2013-10,Purchase Circles,5.0,1
+2013-10,"Patio, Lawn & Garden",5.0,1
+2013-10,Home & Kitchen,5.0,1
+2013-10,Baby Products,4.8,5
+2013-10,Tools & Home Improvement,4.75,12
+2013-10,"Arts, Crafts & Sewing",4.38,8
+2013-10,Electronics,4.33,6
+2013-10,Health & Personal Care,4.29,35
+2013-10,Sports & Outdoors,4.23,919
+2013-10,Beauty,4.21,14
+2013-10,"Clothing, Shoes & Jewelry",4.19,11175
+2013-10,Toys & Games,4.14,7
+2013-10,Cell Phones & Accessories,3.33,3
+2013-09,Cell Phones & Accessories,5.0,1
+2013-09,"Patio, Lawn & Garden",5.0,1
+2013-09,Electronics,4.5,2
+2013-09,"Arts, Crafts & Sewing",4.5,2
+2013-09,Health & Personal Care,4.3,23
+2013-09,Sports & Outdoors,4.27,692
+2013-09,"Clothing, Shoes & Jewelry",4.23,8934
+2013-09,Home & Kitchen,4.0,1
+2013-09,Tools & Home Improvement,3.86,7
+2013-09,Beauty,3.75,8
+2013-09,Toys & Games,3.75,4
+2013-09,Baby Products,3.71,7
+2013-09,Automotive,1.0,1
+2013-08,Purchase Circles,5.0,1
+2013-08,Tools & Home Improvement,4.75,4
+2013-08,Home & Kitchen,4.75,4
+2013-08,Toys & Games,4.5,4
+2013-08,Beauty,4.33,9
+2013-08,"Arts, Crafts & Sewing",4.27,11
+2013-08,Health & Personal Care,4.27,22
+2013-08,Sports & Outdoors,4.27,770
+2013-08,"Clothing, Shoes & Jewelry",4.25,9315
+2013-08,Baby Products,4.08,13
+2013-08,Electronics,4.0,8
+2013-08,Automotive,3.33,3
+2013-08,Cell Phones & Accessories,2.5,2
+2013-08,CDs & Vinyl,2.0,1
+2013-07,"Arts, Crafts & Sewing",5.0,10
+2013-07,Toys & Games,5.0,2
+2013-07,Home & Kitchen,5.0,3
+2013-07,Tools & Home Improvement,4.8,10
+2013-07,Electronics,4.71,7
+2013-07,Baby Products,4.38,8
+2013-07,Sports & Outdoors,4.3,746
+2013-07,"Clothing, Shoes & Jewelry",4.27,8861
+2013-07,Beauty,4.2,10
+2013-07,Health & Personal Care,3.86,14
+2013-06,"Arts, Crafts & Sewing",5.0,2
+2013-06,Beauty,5.0,7
+2013-06,Toys & Games,5.0,2
+2013-06,Electronics,4.75,4
+2013-06,Automotive,4.5,2
+2013-06,Health & Personal Care,4.4,15
+2013-06,"Clothing, Shoes & Jewelry",4.29,7996
+2013-06,Home & Kitchen,4.25,4
+2013-06,Sports & Outdoors,4.23,699
+2013-06,Tools & Home Improvement,4.2,5
+2013-06,Office Products,4.0,1
+2013-06,CDs & Vinyl,4.0,1
+2013-06,Baby Products,3.45,11
+2013-05,Automotive,5.0,2
+2013-05,Electronics,5.0,1
+2013-05,"Arts, Crafts & Sewing",5.0,6
+2013-05,CDs & Vinyl,5.0,1
+2013-05,Toys & Games,4.67,3
+2013-05,Health & Personal Care,4.5,24
+2013-05,"Clothing, Shoes & Jewelry",4.27,8361
+2013-05,Sports & Outdoors,4.25,709
+2013-05,Beauty,4.0,2
+2013-05,Home & Kitchen,4.0,1
+2013-05,Tools & Home Improvement,3.8,5
+2013-05,Baby Products,3.7,10
+2013-04,"Patio, Lawn & Garden",5.0,1
+2013-04,CDs & Vinyl,5.0,1
+2013-04,Tools & Home Improvement,5.0,8
+2013-04,"Arts, Crafts & Sewing",5.0,1
+2013-04,Automotive,5.0,1
+2013-04,Electronics,4.83,6
+2013-04,Baby Products,4.43,7
+2013-04,Sports & Outdoors,4.28,667
+2013-04,"Clothing, Shoes & Jewelry",4.28,8379
+2013-04,Home & Kitchen,4.0,3
+2013-04,Beauty,3.9,10
+2013-04,Health & Personal Care,3.63,16
+2013-04,Office Products,3.0,1
+2013-04,Toys & Games,3.0,3
+2013-03,Toys & Games,5.0,2
+2013-03,Electronics,4.71,7
+2013-03,Tools & Home Improvement,4.67,3
+2013-03,Baby Products,4.63,8
+2013-03,Health & Personal Care,4.52,29
+2013-03,Sports & Outdoors,4.4,644
+2013-03,"Clothing, Shoes & Jewelry",4.31,7811
+2013-03,"Arts, Crafts & Sewing",4.25,4
+2013-03,Home & Kitchen,4.0,1
+2013-03,Automotive,4.0,1
+2013-03,Beauty,3.89,9
+2013-02,Purchase Circles,5.0,1
+2013-02,Home & Kitchen,5.0,1
+2013-02,Tools & Home Improvement,5.0,4
+2013-02,Toys & Games,5.0,2
+2013-02,Baby Products,4.88,8
+2013-02,Beauty,4.86,7
+2013-02,Electronics,4.57,7
+2013-02,Automotive,4.5,2
+2013-02,Health & Personal Care,4.33,24
+2013-02,"Clothing, Shoes & Jewelry",4.32,7634
+2013-02,Sports & Outdoors,4.27,649
+2013-02,"Arts, Crafts & Sewing",3.5,4
+2013-01,Home & Kitchen,5.0,1
+2013-01,CDs & Vinyl,5.0,1
+2013-01,Toys & Games,4.67,6
+2013-01,Tools & Home Improvement,4.4,10
+2013-01,"Clothing, Shoes & Jewelry",4.33,8996
+2013-01,Sports & Outdoors,4.3,837
+2013-01,Health & Personal Care,4.24,29
+2013-01,Beauty,4.14,7
+2013-01,Baby Products,4.14,7
+2013-01,Electronics,4.0,2
+2013-01,Automotive,3.75,4
+2013-01,"Arts, Crafts & Sewing",2.67,3
+2012-12,Home & Kitchen,5.0,1
+2012-12,Office Products,5.0,1
+2012-12,Tools & Home Improvement,4.5,6
+2012-12,Toys & Games,4.4,5
+2012-12,Sports & Outdoors,4.38,766
+2012-12,"Clothing, Shoes & Jewelry",4.33,8607
+2012-12,Electronics,4.29,7
+2012-12,Baby Products,4.25,16
+2012-12,Beauty,4.13,8
+2012-12,Health & Personal Care,4.06,17
+2012-12,Automotive,4.0,4
+2012-12,"Arts, Crafts & Sewing",3.5,4
+2012-11,Home & Kitchen,5.0,1
+2012-11,Toys & Games,4.8,5
+2012-11,Tools & Home Improvement,4.75,4
+2012-11,Baby Products,4.67,3
+2012-11,Sports & Outdoors,4.31,375
+2012-11,"Clothing, Shoes & Jewelry",4.3,4113
+2012-11,Electronics,4.25,4
+2012-11,"Arts, Crafts & Sewing",4.0,2
+2012-11,Health & Personal Care,3.91,11
+2012-11,Beauty,3.86,7
+2012-10,Tools & Home Improvement,5.0,1
+2012-10,Sports & Outdoors,4.34,275
+2012-10,"Clothing, Shoes & Jewelry",4.28,3226
+2012-10,Automotive,4.0,3
+2012-10,Electronics,4.0,1
+2012-10,Beauty,3.75,4
+2012-10,"Arts, Crafts & Sewing",3.75,4
+2012-10,Health & Personal Care,3.7,10
+2012-10,Toys & Games,3.5,2
+2012-09,Home & Kitchen,5.0,1
+2012-09,Tools & Home Improvement,5.0,1
+2012-09,Electronics,5.0,1
+2012-09,Baby Products,4.5,4
+2012-09,"Clothing, Shoes & Jewelry",4.25,1999
+2012-09,Sports & Outdoors,4.24,176
+2012-09,Automotive,4.0,3
+2012-09,Health & Personal Care,3.86,7
+2012-09,Toys & Games,1.0,1
+2012-09,Beauty,1.0,1
+2012-08,Baby Products,5.0,1
+2012-08,"Arts, Crafts & Sewing",5.0,3
+2012-08,Electronics,5.0,2
+2012-08,Beauty,4.8,5
+2012-08,Automotive,4.5,2
+2012-08,Sports & Outdoors,4.35,153
+2012-08,"Clothing, Shoes & Jewelry",4.24,1822
+2012-08,Health & Personal Care,4.0,6
+2012-08,Home & Kitchen,4.0,1
+2012-08,Tools & Home Improvement,4.0,3
+2012-07,Tools & Home Improvement,5.0,1
+2012-07,"Arts, Crafts & Sewing",5.0,2
+2012-07,Health & Personal Care,5.0,2
+2012-07,Electronics,5.0,1
+2012-07,Baby Products,4.67,3
+2012-07,Sports & Outdoors,4.42,143
+2012-07,"Clothing, Shoes & Jewelry",4.29,1588
+2012-07,Office Products,4.0,1
+2012-07,Beauty,3.75,4
+2012-07,Automotive,1.0,1
+2012-06,Office Products,5.0,1
+2012-06,Beauty,4.4,5
+2012-06,Sports & Outdoors,4.32,138
+2012-06,"Clothing, Shoes & Jewelry",4.2,1493
+2012-06,Health & Personal Care,4.0,5
+2012-06,Electronics,4.0,1
+2012-06,Toys & Games,4.0,1
+2012-06,"Patio, Lawn & Garden",3.0,1
+2012-06,Tools & Home Improvement,2.0,1
+2012-06,Baby Products,1.0,1
+2012-05,Beauty,5.0,1
+2012-05,Tools & Home Improvement,5.0,1
+2012-05,Health & Personal Care,4.67,3
+2012-05,"Clothing, Shoes & Jewelry",4.3,1521
+2012-05,Sports & Outdoors,4.18,123
+2012-05,Baby Products,3.5,2
+2012-05,Electronics,3.0,1
+2012-04,Tools & Home Improvement,5.0,1
+2012-04,Health & Personal Care,5.0,1
+2012-04,Sports & Outdoors,4.26,121
+2012-04,"Clothing, Shoes & Jewelry",4.25,1295
+2012-04,Baby Products,4.0,4
+2012-04,Electronics,4.0,1
+2012-04,Beauty,3.0,1
+2012-04,Automotive,3.0,3
+2012-03,Beauty,5.0,1
+2012-03,Health & Personal Care,5.0,2
+2012-03,Electronics,4.5,4
+2012-03,"Clothing, Shoes & Jewelry",4.29,1233
+2012-03,Sports & Outdoors,4.19,112
+2012-03,Tools & Home Improvement,4.0,2
+2012-03,"Arts, Crafts & Sewing",3.0,2
+2012-02,Automotive,5.0,1
+2012-02,Purchase Circles,5.0,1
+2012-02,Beauty,4.67,3
+2012-02,Sports & Outdoors,4.36,135
+2012-02,Electronics,4.33,3
+2012-02,"Clothing, Shoes & Jewelry",4.28,1287
+2012-02,Tools & Home Improvement,4.0,1
+2012-02,Health & Personal Care,3.67,3
+2012-02,Toys & Games,3.0,1
+2012-01,"Arts, Crafts & Sewing",5.0,1
+2012-01,Home & Kitchen,5.0,1
+2012-01,Tools & Home Improvement,4.5,2
+2012-01,Automotive,4.33,3
+2012-01,"Clothing, Shoes & Jewelry",4.3,1522
+2012-01,Sports & Outdoors,4.29,160
+2012-01,Electronics,4.17,6
+2012-01,Toys & Games,4.0,3
+2012-01,Beauty,4.0,2
+2012-01,Health & Personal Care,3.83,6
+2011-12,Tools & Home Improvement,5.0,3
+2011-12,"Arts, Crafts & Sewing",5.0,1
+2011-12,Home & Kitchen,5.0,1
+2011-12,Beauty,5.0,1
+2011-12,Electronics,4.71,7
+2011-12,Health & Personal Care,4.25,4
+2011-12,"Clothing, Shoes & Jewelry",4.24,1456
+2011-12,Sports & Outdoors,4.23,128
+2011-12,Automotive,3.86,7
+2011-12,Toys & Games,3.0,1
+2011-12,Baby Products,1.0,1
+2011-11,"Arts, Crafts & Sewing",5.0,2
+2011-11,Home & Kitchen,5.0,1
+2011-11,Health & Personal Care,4.5,4
+2011-11,Sports & Outdoors,4.27,88
+2011-11,"Clothing, Shoes & Jewelry",4.21,964
+2011-11,Beauty,4.0,1
+2011-10,Tools & Home Improvement,5.0,1
+2011-10,Electronics,5.0,1
+2011-10,Beauty,5.0,1
+2011-10,Health & Personal Care,5.0,5
+2011-10,Sports & Outdoors,4.35,92
+2011-10,"Clothing, Shoes & Jewelry",4.26,949
+2011-10,Baby Products,4.0,1
+2011-09,Health & Personal Care,5.0,5
+2011-09,Electronics,5.0,1
+2011-09,Baby Products,5.0,1
+2011-09,Toys & Games,5.0,1
+2011-09,"Clothing, Shoes & Jewelry",4.25,811
+2011-09,Sports & Outdoors,4.22,83
+2011-08,Electronics,5.0,3
+2011-08,Tools & Home Improvement,5.0,1
+2011-08,"Arts, Crafts & Sewing",5.0,1
+2011-08,Health & Personal Care,4.67,3
+2011-08,Baby Products,4.6,5
+2011-08,Sports & Outdoors,4.4,81
+2011-08,"Clothing, Shoes & Jewelry",4.27,745
+2011-08,Beauty,4.0,1
+2011-07,Electronics,5.0,1
+2011-07,"Clothing, Shoes & Jewelry",4.34,671
+2011-07,Sports & Outdoors,4.25,64
+2011-07,Home & Kitchen,4.0,1
+2011-07,Baby Products,3.75,4
+2011-07,Toys & Games,1.0,1
+2011-06,"Arts, Crafts & Sewing",5.0,1
+2011-06,Sports & Outdoors,4.44,62
+2011-06,"Clothing, Shoes & Jewelry",4.31,621
+2011-06,Health & Personal Care,4.14,7
+2011-06,Beauty,3.25,4
+2011-06,Baby Products,3.0,1
+2011-06,Automotive,2.0,1
+2011-05,Baby Products,5.0,2
+2011-05,Health & Personal Care,4.5,4
+2011-05,Sports & Outdoors,4.45,51
+2011-05,"Clothing, Shoes & Jewelry",4.35,584
+2011-05,Toys & Games,4.0,1
+2011-05,Tools & Home Improvement,2.5,2
+2011-05,Electronics,1.0,1
+2011-04,CDs & Vinyl,5.0,1
+2011-04,"Clothing, Shoes & Jewelry",4.24,524
+2011-04,Sports & Outdoors,4.18,44
+2011-04,Baby Products,3.0,1
+2011-04,Health & Personal Care,2.67,3
+2011-04,Tools & Home Improvement,2.0,1
+2011-03,Beauty,4.5,2
+2011-03,Electronics,4.5,2
+2011-03,Sports & Outdoors,4.26,66
+2011-03,"Clothing, Shoes & Jewelry",4.2,531
+2011-03,Health & Personal Care,3.0,1
+2011-02,"Patio, Lawn & Garden",5.0,1
+2011-02,Toys & Games,5.0,1
+2011-02,Health & Personal Care,4.25,4
+2011-02,"Clothing, Shoes & Jewelry",4.21,482
+2011-02,Sports & Outdoors,3.93,56
+2011-02,Beauty,3.5,2
+2011-02,Tools & Home Improvement,3.0,1
+2011-01,Baby Products,5.0,1
+2011-01,Health & Personal Care,4.33,3
+2011-01,Sports & Outdoors,4.27,45
+2011-01,"Clothing, Shoes & Jewelry",4.25,528
+2010-12,Health & Personal Care,5.0,2
+2010-12,Sports & Outdoors,4.47,38
+2010-12,"Clothing, Shoes & Jewelry",4.36,446
+2010-11,Beauty,5.0,1
+2010-11,Toys & Games,4.5,2
+2010-11,"Clothing, Shoes & Jewelry",4.2,312
+2010-11,Sports & Outdoors,4.14,37
+2010-11,Health & Personal Care,3.0,1
+2010-10,Beauty,5.0,1
+2010-10,Health & Personal Care,5.0,1
+2010-10,Sports & Outdoors,4.44,27
+2010-10,"Clothing, Shoes & Jewelry",4.24,295
+2010-10,Toys & Games,2.0,1
+2010-09,Health & Personal Care,5.0,1
+2010-09,Sports & Outdoors,4.32,25
+2010-09,"Clothing, Shoes & Jewelry",4.22,274
+2010-08,Sports & Outdoors,4.33,24
+2010-08,"Clothing, Shoes & Jewelry",4.33,238
+2010-07,Electronics,5.0,1
+2010-07,Beauty,5.0,1
+2010-07,Baby Products,4.5,2
+2010-07,"Clothing, Shoes & Jewelry",4.28,259
+2010-07,Sports & Outdoors,4.19,26
+2010-07,Tools & Home Improvement,4.0,1
+2010-06,Toys & Games,5.0,1
+2010-06,Sports & Outdoors,4.54,26
+2010-06,Electronics,4.5,2
+2010-06,"Clothing, Shoes & Jewelry",4.24,214
+2010-05,Electronics,5.0,1
+2010-05,"Clothing, Shoes & Jewelry",4.29,161
+2010-05,Sports & Outdoors,4.12,17
+2010-04,Sports & Outdoors,4.56,16
+2010-04,"Clothing, Shoes & Jewelry",4.28,209
+2010-04,Health & Personal Care,4.0,1
+2010-04,Baby Products,3.0,1
+2010-03,"Clothing, Shoes & Jewelry",4.34,239
+2010-03,Sports & Outdoors,4.05,21
+2010-02,Health & Personal Care,5.0,1
+2010-02,"Arts, Crafts & Sewing",5.0,1
+2010-02,Sports & Outdoors,4.43,21
+2010-02,"Clothing, Shoes & Jewelry",4.29,218
+2010-01,Tools & Home Improvement,5.0,1
+2010-01,"Arts, Crafts & Sewing",5.0,1
+2010-01,"Clothing, Shoes & Jewelry",4.43,261
+2010-01,Sports & Outdoors,4.39,28
+2010-01,Baby Products,4.0,1
+2009-12,Beauty,5.0,1
+2009-12,"Clothing, Shoes & Jewelry",4.45,192
+2009-12,Sports & Outdoors,4.33,30
+2009-11,Health & Personal Care,5.0,1
+2009-11,Sports & Outdoors,4.44,18
+2009-11,"Clothing, Shoes & Jewelry",4.27,179
+2009-10,Baby Products,5.0,2
+2009-10,Sports & Outdoors,4.42,12
+2009-10,"Clothing, Shoes & Jewelry",4.22,143
+2009-10,Health & Personal Care,3.0,1
+2009-09,Health & Personal Care,5.0,1
+2009-09,Baby Products,5.0,1
+2009-09,"Clothing, Shoes & Jewelry",4.3,141
+2009-09,Sports & Outdoors,3.57,14
+2009-09,CDs & Vinyl,3.0,1
+2009-08,"Clothing, Shoes & Jewelry",4.2,100
+2009-08,Sports & Outdoors,4.14,7
+2009-07,"Arts, Crafts & Sewing",5.0,1
+2009-07,"Clothing, Shoes & Jewelry",4.21,82
+2009-07,Sports & Outdoors,3.82,11
+2009-06,"Clothing, Shoes & Jewelry",4.21,107
+2009-06,Sports & Outdoors,4.2,10
+2009-05,"Clothing, Shoes & Jewelry",4.43,114
+2009-05,Sports & Outdoors,4.41,17
+2009-04,Health & Personal Care,5.0,1
+2009-04,Baby Products,5.0,1
+2009-04,Sports & Outdoors,4.55,11
+2009-04,"Clothing, Shoes & Jewelry",4.19,113
+2009-04,Electronics,4.0,1
+2009-03,"Clothing, Shoes & Jewelry",4.16,86
+2009-03,Sports & Outdoors,4.0,8
+2009-03,Electronics,4.0,1
+2009-02,Health & Personal Care,5.0,1
+2009-02,Sports & Outdoors,4.67,12
+2009-02,"Clothing, Shoes & Jewelry",4.5,108
+2009-01,Toys & Games,5.0,1
+2009-01,Health & Personal Care,5.0,1
+2009-01,"Clothing, Shoes & Jewelry",4.49,115
+2009-01,Sports & Outdoors,4.4,15
+2008-12,Sports & Outdoors,4.5,10
+2008-12,"Clothing, Shoes & Jewelry",4.44,88
+2008-11,Sports & Outdoors,4.4,10
+2008-11,"Clothing, Shoes & Jewelry",4.39,84
+2008-11,Health & Personal Care,4.0,1
+2008-10,Sports & Outdoors,4.5,8
+2008-10,"Clothing, Shoes & Jewelry",4.26,69
+2008-09,Sports & Outdoors,4.57,7
+2008-09,"Clothing, Shoes & Jewelry",4.28,50
+2008-09,"Arts, Crafts & Sewing",4.0,1
+2008-09,Toys & Games,4.0,1
+2008-08,"Clothing, Shoes & Jewelry",4.41,59
+2008-08,Sports & Outdoors,4.25,8
+2008-08,"Arts, Crafts & Sewing",4.0,1
+2008-08,CDs & Vinyl,1.0,1
+2008-07,Health & Personal Care,5.0,1
+2008-07,Sports & Outdoors,4.67,6
+2008-07,"Clothing, Shoes & Jewelry",4.37,48
+2008-06,Sports & Outdoors,4.57,14
+2008-06,"Clothing, Shoes & Jewelry",4.39,74
+2008-05,Health & Personal Care,5.0,1
+2008-05,Sports & Outdoors,4.67,3
+2008-05,"Clothing, Shoes & Jewelry",4.28,61
+2008-04,Sports & Outdoors,4.83,6
+2008-04,"Clothing, Shoes & Jewelry",4.27,51
+2008-04,Toys & Games,4.0,1
+2008-04,Health & Personal Care,2.0,1
+2008-03,Sports & Outdoors,4.86,7
+2008-03,"Clothing, Shoes & Jewelry",4.42,57
+2008-02,Sports & Outdoors,5.0,7
+2008-02,"Clothing, Shoes & Jewelry",4.3,54
+2008-01,Sports & Outdoors,4.5,10
+2008-01,"Clothing, Shoes & Jewelry",4.48,67
+2008-01,"Arts, Crafts & Sewing",4.0,1
+2007-12,Sports & Outdoors,5.0,1
+2007-12,"Clothing, Shoes & Jewelry",4.48,54
+2007-11,Sports & Outdoors,5.0,1
+2007-11,"Clothing, Shoes & Jewelry",4.23,44
+2007-10,Sports & Outdoors,4.8,5
+2007-10,"Clothing, Shoes & Jewelry",4.33,36
+2007-09,Sports & Outdoors,5.0,4
+2007-09,"Clothing, Shoes & Jewelry",4.48,33
+2007-08,"Clothing, Shoes & Jewelry",4.32,25
+2007-08,Sports & Outdoors,3.86,7
+2007-07,"Clothing, Shoes & Jewelry",4.44,27
+2007-07,Sports & Outdoors,4.0,6
+2007-06,Sports & Outdoors,4.54,13
+2007-06,"Clothing, Shoes & Jewelry",4.41,22
+2007-05,Sports & Outdoors,4.6,5
+2007-05,"Clothing, Shoes & Jewelry",4.31,35
+2007-04,Health & Personal Care,5.0,1
+2007-04,Sports & Outdoors,4.6,5
+2007-04,"Clothing, Shoes & Jewelry",4.32,22
+2007-04,Electronics,4.0,1
+2007-03,Sports & Outdoors,4.75,4
+2007-03,"Clothing, Shoes & Jewelry",4.39,31
+2007-03,Beauty,3.0,1
+2007-02,Sports & Outdoors,4.86,7
+2007-02,"Clothing, Shoes & Jewelry",4.43,23
+2007-01,"Clothing, Shoes & Jewelry",4.41,32
+2007-01,Sports & Outdoors,4.0,6
+2006-12,Sports & Outdoors,5.0,2
+2006-12,"Clothing, Shoes & Jewelry",3.93,14
+2006-11,"Clothing, Shoes & Jewelry",4.46,13
+2006-11,Sports & Outdoors,3.0,1
+2006-10,Sports & Outdoors,5.0,2
+2006-10,"Clothing, Shoes & Jewelry",4.71,7
+2006-09,Sports & Outdoors,5.0,1
+2006-09,"Clothing, Shoes & Jewelry",4.44,9
+2006-08,Sports & Outdoors,5.0,1
+2006-08,"Clothing, Shoes & Jewelry",4.25,8
+2006-07,"Clothing, Shoes & Jewelry",4.67,9
+2006-07,Sports & Outdoors,4.0,2
+2006-06,Sports & Outdoors,5.0,4
+2006-06,"Clothing, Shoes & Jewelry",4.75,4
+2006-05,Sports & Outdoors,5.0,1
+2006-05,"Clothing, Shoes & Jewelry",4.0,4
+2006-04,"Clothing, Shoes & Jewelry",4.2,5
+2006-04,Electronics,4.0,1
+2006-03,Baby Products,5.0,1
+2006-03,Sports & Outdoors,5.0,1
+2006-03,"Clothing, Shoes & Jewelry",4.5,6
+2006-02,Sports & Outdoors,5.0,2
+2006-02,"Clothing, Shoes & Jewelry",5.0,4
+2006-01,Sports & Outdoors,4.8,5
+2006-01,"Clothing, Shoes & Jewelry",4.38,8
+2005-12,Sports & Outdoors,4.5,2
+2005-12,"Clothing, Shoes & Jewelry",3.33,3
+2005-11,"Clothing, Shoes & Jewelry",4.25,4
+2005-10,Sports & Outdoors,4.5,2
+2005-09,Sports & Outdoors,5.0,4
+2005-09,"Clothing, Shoes & Jewelry",3.67,3
+2005-08,Sports & Outdoors,5.0,1
+2005-08,"Clothing, Shoes & Jewelry",4.0,1
+2005-07,"Clothing, Shoes & Jewelry",5.0,2
+2005-06,Sports & Outdoors,4.0,1
+2005-05,"Clothing, Shoes & Jewelry",5.0,1
+2005-04,"Clothing, Shoes & Jewelry",5.0,2
+2005-03,"Clothing, Shoes & Jewelry",4.0,1
+2004-12,"Clothing, Shoes & Jewelry",4.5,2
+2004-09,"Clothing, Shoes & Jewelry",4.0,3
+2004-07,"Clothing, Shoes & Jewelry",5.0,1
+2003-12,"Clothing, Shoes & Jewelry",5.0,1
+2003-03,"Clothing, Shoes & Jewelry",5.0,1

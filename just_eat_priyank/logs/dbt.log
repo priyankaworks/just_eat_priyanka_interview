@@ -1,0 +1,1869 @@
+[0m18:24:28.313112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A43746170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A44EC24D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A44EC22F0>]}
+
+
+============================== 18:24:28.313112 | d8f8d06b-9e07-4406-b2d8-23b5c191bdae ==============================
+[0m18:24:28.313112 [info ] [MainThread]: Running with dbt=1.9.2
+[0m18:24:28.313112 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'A:\\just_eat_usecase\\just_eat_priyank\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\pratheepkumaar\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:24:28.349472 [info ] [MainThread]: dbt version: 1.9.2
+[0m18:24:28.351538 [info ] [MainThread]: python version: 3.10.11
+[0m18:24:28.352537 [info ] [MainThread]: python path: A:\just_eat_usecase\localdev\Scripts\python.exe
+[0m18:24:28.354822 [info ] [MainThread]: os info: Windows-10-10.0.19044-SP0
+[0m18:24:29.490087 [info ] [MainThread]: Using profiles dir at C:\Users\pratheepkumaar\.dbt
+[0m18:24:29.490087 [info ] [MainThread]: Using profiles.yml file at C:\Users\pratheepkumaar\.dbt\profiles.yml
+[0m18:24:29.490087 [info ] [MainThread]: Using dbt_project.yml file at A:\just_eat_usecase\just_eat_priyank\dbt_project.yml
+[0m18:24:29.490087 [info ] [MainThread]: adapter type: bigquery
+[0m18:24:29.490087 [info ] [MainThread]: adapter version: 1.9.1
+[0m18:24:29.697156 [info ] [MainThread]: Configuration:
+[0m18:24:29.697156 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:24:29.697156 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:24:29.697156 [info ] [MainThread]: Required dependencies:
+[0m18:24:29.697156 [debug] [MainThread]: Executing "git --help"
+[0m18:24:29.768670 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:24:29.768670 [debug] [MainThread]: STDERR: "b''"
+[0m18:24:29.768670 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:24:29.768670 [info ] [MainThread]: Connection:
+[0m18:24:29.768670 [info ] [MainThread]:   method: service-account
+[0m18:24:29.768670 [info ] [MainThread]:   database: just-eat-451011
+[0m18:24:29.768670 [info ] [MainThread]:   execution_project: just-eat-451011
+[0m18:24:29.768670 [info ] [MainThread]:   schema: just_eat_dataset
+[0m18:24:29.782589 [info ] [MainThread]:   location: EU
+[0m18:24:29.783601 [info ] [MainThread]:   priority: interactive
+[0m18:24:29.785612 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:24:29.786588 [info ] [MainThread]:   impersonate_service_account: None
+[0m18:24:29.788591 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:24:29.789589 [info ] [MainThread]:   job_retries: 1
+[0m18:24:29.790587 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:24:29.792595 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m18:24:29.794619 [info ] [MainThread]:   timeout_seconds: 300
+[0m18:24:29.795267 [info ] [MainThread]:   client_id: None
+[0m18:24:29.797266 [info ] [MainThread]:   token_uri: None
+[0m18:24:29.798266 [info ] [MainThread]:   dataproc_region: None
+[0m18:24:29.799382 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m18:24:29.799382 [info ] [MainThread]:   gcs_bucket: None
+[0m18:24:29.802302 [info ] [MainThread]:   dataproc_batch: None
+[0m18:24:29.804304 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m18:24:30.347754 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:24:30.347754 [debug] [MainThread]: On debug: select 1 as id
+[0m18:24:30.348755 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:24:30.852541 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:4831af2f-7766-45fc-94fa-d69d963e1928&page=queryresults
+[0m18:24:31.165962 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:24:31.165962 [info ] [MainThread]: [32mAll checks passed![0m
+[0m18:24:31.181448 [debug] [MainThread]: Command `dbt debug` succeeded at 18:24:31.181448 after 2.98 seconds
+[0m18:24:31.181448 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:24:31.181448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A43746170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A3FCD0A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A43A7C460>]}
+[0m18:24:31.181448 [debug] [MainThread]: Flushing usage events
+[0m18:24:31.620440 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:32:08.964572 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CD514A110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CD68C2500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CD68C2320>]}
+
+
+============================== 18:32:08.964572 | c0b2c16d-f805-43e9-ad3e-483b1a25931b ==============================
+[0m18:32:08.964572 [info ] [MainThread]: Running with dbt=1.9.2
+[0m18:32:08.964572 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'A:\\just_eat_usecase\\just_eat_priyank\\logs', 'profiles_dir': 'C:\\Users\\pratheepkumaar\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:32:10.203089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c0b2c16d-f805-43e9-ad3e-483b1a25931b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CE7E2D9C0>]}
+[0m18:32:10.359310 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c0b2c16d-f805-43e9-ad3e-483b1a25931b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CE7BAE6E0>]}
+[0m18:32:10.359310 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m18:32:10.970673 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m18:32:10.970673 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:32:10.970673 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c0b2c16d-f805-43e9-ad3e-483b1a25931b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CD66FAB00>]}
+[0m18:32:14.358022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c0b2c16d-f805-43e9-ad3e-483b1a25931b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CE8CDC130>]}
+[0m18:32:14.498647 [debug] [MainThread]: Wrote artifact WritableManifest to A:\just_eat_usecase\just_eat_priyank\target\manifest.json
+[0m18:32:14.514272 [debug] [MainThread]: Wrote artifact SemanticManifest to A:\just_eat_usecase\just_eat_priyank\target\semantic_manifest.json
+[0m18:32:14.608016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c0b2c16d-f805-43e9-ad3e-483b1a25931b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CE8D01E70>]}
+[0m18:32:14.608016 [info ] [MainThread]: Found 2 models, 2 seeds, 4 data tests, 491 macros
+[0m18:32:14.623643 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c0b2c16d-f805-43e9-ad3e-483b1a25931b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CD49E6A40>]}
+[0m18:32:14.623643 [info ] [MainThread]: 
+[0m18:32:14.623643 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:32:14.623643 [info ] [MainThread]: 
+[0m18:32:14.631726 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:32:14.641284 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_just-eat-451011'
+[0m18:32:14.642312 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:32:15.456987 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_just-eat-451011_just_eat_dataset'
+[0m18:32:15.456987 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:32:15.832935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c0b2c16d-f805-43e9-ad3e-483b1a25931b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CE7BAE7A0>]}
+[0m18:32:15.832935 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:32:15.848405 [debug] [Thread-1 (]: Began running node model.just_eat_priyank.my_first_dbt_model
+[0m18:32:15.848405 [info ] [Thread-1 (]: 1 of 2 START sql table model just_eat_dataset.my_first_dbt_model ............... [RUN]
+[0m18:32:15.848405 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.just_eat_priyank.my_first_dbt_model'
+[0m18:32:15.848405 [debug] [Thread-1 (]: Began compiling node model.just_eat_priyank.my_first_dbt_model
+[0m18:32:15.865402 [debug] [Thread-1 (]: Writing injected SQL for node "model.just_eat_priyank.my_first_dbt_model"
+[0m18:32:15.869303 [debug] [Thread-1 (]: Began executing node model.just_eat_priyank.my_first_dbt_model
+[0m18:32:15.982730 [debug] [Thread-1 (]: Writing runtime sql for node "model.just_eat_priyank.my_first_dbt_model"
+[0m18:32:15.982730 [debug] [Thread-1 (]: On model.just_eat_priyank.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "just_eat_priyank", "target_name": "dev", "node_id": "model.just_eat_priyank.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `just-eat-451011`.`just_eat_dataset`.`my_first_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m18:32:15.982730 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:32:16.248526 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:66166c22-764c-4dfb-a6d2-36e08cfb7cb6&page=queryresults
+[0m18:32:16.248526 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:66166c22-764c-4dfb-a6d2-36e08cfb7cb6&page=queryresults
+[0m18:32:16.248526 [debug] [Thread-1 (]: Database Error in model my_first_dbt_model (models\example\my_first_dbt_model.sql)
+  Not found: Dataset just-eat-451011:just_eat_dataset was not found in location EU
+  compiled code at target\run\just_eat_priyank\models\example\my_first_dbt_model.sql
+[0m18:32:16.271732 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c0b2c16d-f805-43e9-ad3e-483b1a25931b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CD4CB53C0>]}
+[0m18:32:16.273738 [error] [Thread-1 (]: 1 of 2 ERROR creating sql table model just_eat_dataset.my_first_dbt_model ...... [[31mERROR[0m in 0.40s]
+[0m18:32:16.275344 [debug] [Thread-1 (]: Finished running node model.just_eat_priyank.my_first_dbt_model
+[0m18:32:16.275344 [debug] [Thread-4 (]: Marking all children of 'model.just_eat_priyank.my_first_dbt_model' to be skipped because of status 'error'.  Reason: Database Error in model my_first_dbt_model (models\example\my_first_dbt_model.sql)
+  Not found: Dataset just-eat-451011:just_eat_dataset was not found in location EU
+  compiled code at target\run\just_eat_priyank\models\example\my_first_dbt_model.sql.
+[0m18:32:16.275344 [debug] [Thread-1 (]: Began running node model.just_eat_priyank.my_second_dbt_model
+[0m18:32:16.275344 [info ] [Thread-1 (]: 2 of 2 SKIP relation just_eat_dataset.my_second_dbt_model ...................... [[33mSKIP[0m]
+[0m18:32:16.275344 [debug] [Thread-1 (]: Finished running node model.just_eat_priyank.my_second_dbt_model
+[0m18:32:16.285194 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:32:16.285499 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:32:16.285499 [debug] [MainThread]: Connection 'list_just-eat-451011' was properly closed.
+[0m18:32:16.285499 [debug] [MainThread]: Connection 'list_just-eat-451011_just_eat_dataset' was properly closed.
+[0m18:32:16.285499 [debug] [MainThread]: Connection 'model.just_eat_priyank.my_first_dbt_model' was properly closed.
+[0m18:32:16.285499 [info ] [MainThread]: 
+[0m18:32:16.285499 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 1.65 seconds (1.65s).
+[0m18:32:16.294752 [debug] [MainThread]: Command end result
+[0m18:32:16.335517 [debug] [MainThread]: Wrote artifact WritableManifest to A:\just_eat_usecase\just_eat_priyank\target\manifest.json
+[0m18:32:16.335517 [debug] [MainThread]: Wrote artifact SemanticManifest to A:\just_eat_usecase\just_eat_priyank\target\semantic_manifest.json
+[0m18:32:16.351416 [debug] [MainThread]: Wrote artifact RunExecutionResult to A:\just_eat_usecase\just_eat_priyank\target\run_results.json
+[0m18:32:16.352297 [info ] [MainThread]: 
+[0m18:32:16.352297 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m18:32:16.352297 [info ] [MainThread]: 
+[0m18:32:16.352297 [error] [MainThread]:   Database Error in model my_first_dbt_model (models\example\my_first_dbt_model.sql)
+  Not found: Dataset just-eat-451011:just_eat_dataset was not found in location EU
+  compiled code at target\run\just_eat_priyank\models\example\my_first_dbt_model.sql
+[0m18:32:16.361853 [info ] [MainThread]: 
+[0m18:32:16.363663 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+[0m18:32:16.365078 [debug] [MainThread]: Command `dbt run` failed at 18:32:16.365078 after 7.51 seconds
+[0m18:32:16.365078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CD514A110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CE8D6FAF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CD3F8EB30>]}
+[0m18:32:16.368145 [debug] [MainThread]: Flushing usage events
+[0m18:32:16.771290 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:37:14.255293 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E83BD4A200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E83D6BE650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E83D6BE470>]}
+
+
+============================== 18:37:14.270956 | b2dcd153-2918-403d-916f-db14453070e9 ==============================
+[0m18:37:14.270956 [info ] [MainThread]: Running with dbt=1.9.2
+[0m18:37:14.270956 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'A:\\just_eat_usecase\\just_eat_priyank\\logs', 'profiles_dir': 'C:\\Users\\pratheepkumaar\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:37:15.496288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b2dcd153-2918-403d-916f-db14453070e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E84EB33130>]}
+[0m18:37:15.636880 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b2dcd153-2918-403d-916f-db14453070e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E83D0EDDE0>]}
+[0m18:37:15.636880 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m18:37:16.231195 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m18:37:16.418699 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m18:37:16.418699 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b2dcd153-2918-403d-916f-db14453070e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E83CD90B80>]}
+[0m18:37:18.440270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b2dcd153-2918-403d-916f-db14453070e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E84FCA3EE0>]}
+[0m18:37:18.655896 [debug] [MainThread]: Wrote artifact WritableManifest to A:\just_eat_usecase\just_eat_priyank\target\manifest.json
+[0m18:37:18.661899 [debug] [MainThread]: Wrote artifact SemanticManifest to A:\just_eat_usecase\just_eat_priyank\target\semantic_manifest.json
+[0m18:37:18.679025 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b2dcd153-2918-403d-916f-db14453070e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E84FC796F0>]}
+[0m18:37:18.679025 [info ] [MainThread]: Found 2 models, 2 seeds, 4 data tests, 491 macros
+[0m18:37:18.679025 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b2dcd153-2918-403d-916f-db14453070e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E84FC797E0>]}
+[0m18:37:18.694650 [info ] [MainThread]: 
+[0m18:37:18.694650 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:37:18.694650 [info ] [MainThread]: 
+[0m18:37:18.701379 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:37:18.709713 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_just-eat-451011'
+[0m18:37:18.711439 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:37:19.078210 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_just-eat-451011, now create_just-eat-451011_test)
+[0m18:37:19.078210 [debug] [ThreadPool]: Creating schema "database: "just-eat-451011"
+schema: "test"
+"
+[0m18:37:19.093657 [debug] [ThreadPool]: On create_just-eat-451011_test: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "just_eat_priyank", "target_name": "dev", "connection_name": "create_just-eat-451011_test"} */
+create schema if not exists `just-eat-451011`.`test`
+  
+[0m18:37:19.093657 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:37:19.571197 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:4418d297-d35c-4eb4-bfce-0759d1219fd0&page=queryresults
+[0m18:37:21.500288 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_just-eat-451011_test'
+[0m18:37:21.500288 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:37:21.955605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b2dcd153-2918-403d-916f-db14453070e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E83A7C8FD0>]}
+[0m18:37:21.955605 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:37:21.955605 [debug] [Thread-1 (]: Began running node model.just_eat_priyank.my_first_dbt_model
+[0m18:37:21.955605 [info ] [Thread-1 (]: 1 of 2 START sql table model test.my_first_dbt_model ........................... [RUN]
+[0m18:37:21.955605 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.just_eat_priyank.my_first_dbt_model'
+[0m18:37:21.955605 [debug] [Thread-1 (]: Began compiling node model.just_eat_priyank.my_first_dbt_model
+[0m18:37:21.971085 [debug] [Thread-1 (]: Writing injected SQL for node "model.just_eat_priyank.my_first_dbt_model"
+[0m18:37:21.971085 [debug] [Thread-1 (]: Began executing node model.just_eat_priyank.my_first_dbt_model
+[0m18:37:22.032171 [debug] [Thread-1 (]: Writing runtime sql for node "model.just_eat_priyank.my_first_dbt_model"
+[0m18:37:22.033146 [debug] [Thread-1 (]: On model.just_eat_priyank.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "just_eat_priyank", "target_name": "dev", "node_id": "model.just_eat_priyank.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `just-eat-451011`.`test`.`my_first_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m18:37:22.034172 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:37:23.036536 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:802e005a-9b26-498c-8431-30c58d5e653e&page=queryresults
+[0m18:37:25.796202 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b2dcd153-2918-403d-916f-db14453070e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E83B9B7880>]}
+[0m18:37:25.796202 [info ] [Thread-1 (]: 1 of 2 OK created sql table model test.my_first_dbt_model ...................... [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 3.84s]
+[0m18:37:25.796202 [debug] [Thread-1 (]: Finished running node model.just_eat_priyank.my_first_dbt_model
+[0m18:37:25.796202 [debug] [Thread-1 (]: Began running node model.just_eat_priyank.my_second_dbt_model
+[0m18:37:25.796202 [info ] [Thread-1 (]: 2 of 2 START sql view model test.my_second_dbt_model ........................... [RUN]
+[0m18:37:25.796202 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.just_eat_priyank.my_first_dbt_model, now model.just_eat_priyank.my_second_dbt_model)
+[0m18:37:25.809626 [debug] [Thread-1 (]: Began compiling node model.just_eat_priyank.my_second_dbt_model
+[0m18:37:25.815254 [debug] [Thread-1 (]: Writing injected SQL for node "model.just_eat_priyank.my_second_dbt_model"
+[0m18:37:25.816720 [debug] [Thread-1 (]: Began executing node model.just_eat_priyank.my_second_dbt_model
+[0m18:37:25.846906 [debug] [Thread-1 (]: Writing runtime sql for node "model.just_eat_priyank.my_second_dbt_model"
+[0m18:37:25.846906 [debug] [Thread-1 (]: On model.just_eat_priyank.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "just_eat_priyank", "target_name": "dev", "node_id": "model.just_eat_priyank.my_second_dbt_model"} */
+
+
+  create or replace view `just-eat-451011`.`test`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `just-eat-451011`.`test`.`my_first_dbt_model`
+where id = 1;
+
+
+[0m18:37:25.846906 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:37:26.612972 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:3016985d-4701-4c72-8ed4-3e6043bf97c9&page=queryresults
+[0m18:37:27.066100 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b2dcd153-2918-403d-916f-db14453070e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E84F5E79D0>]}
+[0m18:37:27.066100 [info ] [Thread-1 (]: 2 of 2 OK created sql view model test.my_second_dbt_model ...................... [[32mCREATE VIEW (0 processed)[0m in 1.27s]
+[0m18:37:27.066100 [debug] [Thread-1 (]: Finished running node model.just_eat_priyank.my_second_dbt_model
+[0m18:37:27.066100 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:37:27.066100 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:37:27.066100 [debug] [MainThread]: Connection 'create_just-eat-451011_test' was properly closed.
+[0m18:37:27.081722 [debug] [MainThread]: Connection 'list_just-eat-451011_test' was properly closed.
+[0m18:37:27.082885 [debug] [MainThread]: Connection 'model.just_eat_priyank.my_second_dbt_model' was properly closed.
+[0m18:37:27.084357 [info ] [MainThread]: 
+[0m18:37:27.085374 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 8.38 seconds (8.38s).
+[0m18:37:27.089271 [debug] [MainThread]: Command end result
+[0m18:37:27.131290 [debug] [MainThread]: Wrote artifact WritableManifest to A:\just_eat_usecase\just_eat_priyank\target\manifest.json
+[0m18:37:27.146092 [debug] [MainThread]: Wrote artifact SemanticManifest to A:\just_eat_usecase\just_eat_priyank\target\semantic_manifest.json
+[0m18:37:27.158088 [debug] [MainThread]: Wrote artifact RunExecutionResult to A:\just_eat_usecase\just_eat_priyank\target\run_results.json
+[0m18:37:27.158088 [info ] [MainThread]: 
+[0m18:37:27.160090 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:37:27.161090 [info ] [MainThread]: 
+[0m18:37:27.162996 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m18:37:27.165362 [debug] [MainThread]: Command `dbt run` succeeded at 18:37:27.165362 after 13.01 seconds
+[0m18:37:27.167361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E83BD4A200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E84FC5C430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E83C089120>]}
+[0m18:37:27.168379 [debug] [MainThread]: Flushing usage events
+[0m18:37:27.577053 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:39:48.348836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CF164A140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CF2FC2590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CF2FC23B0>]}
+
+
+============================== 18:39:48.348836 | fe6a2673-d2cc-41af-afb7-6fe3b312970a ==============================
+[0m18:39:48.348836 [info ] [MainThread]: Running with dbt=1.9.2
+[0m18:39:48.348836 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\pratheepkumaar\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'A:\\just_eat_usecase\\just_eat_priyank\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:39:49.588123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fe6a2673-d2cc-41af-afb7-6fe3b312970a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CF2F91AB0>]}
+[0m18:39:49.745308 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fe6a2673-d2cc-41af-afb7-6fe3b312970a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D022AFF40>]}
+[0m18:39:49.745308 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m18:39:50.387134 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m18:39:50.574628 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m18:39:50.574628 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'fe6a2673-d2cc-41af-afb7-6fe3b312970a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CF2691E40>]}
+[0m18:39:52.589883 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fe6a2673-d2cc-41af-afb7-6fe3b312970a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D034A8A30>]}
+[0m18:39:52.802644 [debug] [MainThread]: Wrote artifact WritableManifest to A:\just_eat_usecase\just_eat_priyank\target\manifest.json
+[0m18:39:52.802644 [debug] [MainThread]: Wrote artifact SemanticManifest to A:\just_eat_usecase\just_eat_priyank\target\semantic_manifest.json
+[0m18:39:52.833928 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fe6a2673-d2cc-41af-afb7-6fe3b312970a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D034777C0>]}
+[0m18:39:52.833928 [info ] [MainThread]: Found 2 models, 2 seeds, 4 data tests, 491 macros
+[0m18:39:52.833928 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fe6a2673-d2cc-41af-afb7-6fe3b312970a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D03477400>]}
+[0m18:39:52.833928 [info ] [MainThread]: 
+[0m18:39:52.833928 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:39:52.833928 [info ] [MainThread]: 
+[0m18:39:52.848166 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:39:52.857810 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_just-eat-451011'
+[0m18:39:52.858818 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:39:53.332324 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_just-eat-451011_just_eat_dataset'
+[0m18:39:53.333334 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:39:53.742176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fe6a2673-d2cc-41af-afb7-6fe3b312970a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CEEE244C0>]}
+[0m18:39:53.742176 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:39:53.742176 [debug] [Thread-1 (]: Began running node model.just_eat_priyank.my_first_dbt_model
+[0m18:39:53.742176 [info ] [Thread-1 (]: 1 of 2 START sql table model just_eat_dataset.my_first_dbt_model ............... [RUN]
+[0m18:39:53.742176 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.just_eat_priyank.my_first_dbt_model'
+[0m18:39:53.742176 [debug] [Thread-1 (]: Began compiling node model.just_eat_priyank.my_first_dbt_model
+[0m18:39:53.771184 [debug] [Thread-1 (]: Writing injected SQL for node "model.just_eat_priyank.my_first_dbt_model"
+[0m18:39:53.771184 [debug] [Thread-1 (]: Began executing node model.just_eat_priyank.my_first_dbt_model
+[0m18:39:53.819962 [debug] [Thread-1 (]: Writing runtime sql for node "model.just_eat_priyank.my_first_dbt_model"
+[0m18:39:53.819962 [debug] [Thread-1 (]: On model.just_eat_priyank.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "just_eat_priyank", "target_name": "dev", "node_id": "model.just_eat_priyank.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `just-eat-451011`.`just_eat_dataset`.`my_first_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m18:39:53.819962 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:39:54.824380 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:1fa25f52-a247-45cc-bc69-ec2924e7d042&page=queryresults
+[0m18:39:57.593868 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fe6a2673-d2cc-41af-afb7-6fe3b312970a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CF11D2500>]}
+[0m18:39:57.594887 [info ] [Thread-1 (]: 1 of 2 OK created sql table model just_eat_dataset.my_first_dbt_model .......... [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 3.85s]
+[0m18:39:57.596868 [debug] [Thread-1 (]: Finished running node model.just_eat_priyank.my_first_dbt_model
+[0m18:39:57.598884 [debug] [Thread-1 (]: Began running node model.just_eat_priyank.my_second_dbt_model
+[0m18:39:57.599871 [info ] [Thread-1 (]: 2 of 2 START sql view model just_eat_dataset.my_second_dbt_model ............... [RUN]
+[0m18:39:57.601873 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.just_eat_priyank.my_first_dbt_model, now model.just_eat_priyank.my_second_dbt_model)
+[0m18:39:57.603407 [debug] [Thread-1 (]: Began compiling node model.just_eat_priyank.my_second_dbt_model
+[0m18:39:57.607936 [debug] [Thread-1 (]: Writing injected SQL for node "model.just_eat_priyank.my_second_dbt_model"
+[0m18:39:57.609591 [debug] [Thread-1 (]: Began executing node model.just_eat_priyank.my_second_dbt_model
+[0m18:39:57.639447 [debug] [Thread-1 (]: Writing runtime sql for node "model.just_eat_priyank.my_second_dbt_model"
+[0m18:39:57.641410 [debug] [Thread-1 (]: On model.just_eat_priyank.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "just_eat_priyank", "target_name": "dev", "node_id": "model.just_eat_priyank.my_second_dbt_model"} */
+
+
+  create or replace view `just-eat-451011`.`just_eat_dataset`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `just-eat-451011`.`just_eat_dataset`.`my_first_dbt_model`
+where id = 1;
+
+
+[0m18:39:57.642411 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:39:58.508883 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:1428c422-6891-49d3-b2bf-1d0e197a6d28&page=queryresults
+[0m18:39:58.981444 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fe6a2673-d2cc-41af-afb7-6fe3b312970a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D030E4C70>]}
+[0m18:39:58.981444 [info ] [Thread-1 (]: 2 of 2 OK created sql view model just_eat_dataset.my_second_dbt_model .......... [[32mCREATE VIEW (0 processed)[0m in 1.38s]
+[0m18:39:58.981444 [debug] [Thread-1 (]: Finished running node model.just_eat_priyank.my_second_dbt_model
+[0m18:39:58.996940 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:39:58.996940 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:39:58.996940 [debug] [MainThread]: Connection 'list_just-eat-451011' was properly closed.
+[0m18:39:58.996940 [debug] [MainThread]: Connection 'list_just-eat-451011_just_eat_dataset' was properly closed.
+[0m18:39:58.996940 [debug] [MainThread]: Connection 'model.just_eat_priyank.my_second_dbt_model' was properly closed.
+[0m18:39:58.996940 [info ] [MainThread]: 
+[0m18:39:58.996940 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 6.15 seconds (6.15s).
+[0m18:39:59.008442 [debug] [MainThread]: Command end result
+[0m18:39:59.037521 [debug] [MainThread]: Wrote artifact WritableManifest to A:\just_eat_usecase\just_eat_priyank\target\manifest.json
+[0m18:39:59.052943 [debug] [MainThread]: Wrote artifact SemanticManifest to A:\just_eat_usecase\just_eat_priyank\target\semantic_manifest.json
+[0m18:39:59.062941 [debug] [MainThread]: Wrote artifact RunExecutionResult to A:\just_eat_usecase\just_eat_priyank\target\run_results.json
+[0m18:39:59.063941 [info ] [MainThread]: 
+[0m18:39:59.065942 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:39:59.067941 [info ] [MainThread]: 
+[0m18:39:59.069058 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m18:39:59.071758 [debug] [MainThread]: Command `dbt run` succeeded at 18:39:59.071758 after 10.83 seconds
+[0m18:39:59.072776 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CF164A140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CF264F0A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CF172C490>]}
+[0m18:39:59.073776 [debug] [MainThread]: Flushing usage events
+[0m18:39:59.450053 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:38:21.300479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221576524A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022158DD6740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022158DD6920>]}
+
+
+============================== 12:38:21.307979 | 662e5606-4405-4344-9d65-f7c3f8130766 ==============================
+[0m12:38:21.307979 [info ] [MainThread]: Running with dbt=1.9.2
+[0m12:38:21.308986 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'A:\\just_eat_usecase\\just_eat_priyank\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\pratheepkumaar\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m12:38:21.847156 [error] [MainThread]: Encountered an error:
+
+[0m12:38:22.236199 [error] [MainThread]: Traceback (most recent call last):
+  File "A:\just_eat_usecase\localdev\lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+  File "A:\just_eat_usecase\localdev\lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "A:\just_eat_usecase\localdev\lib\site-packages\dbt\cli\requires.py", line 232, in wrapper
+    profile = load_profile(flags.PROJECT_DIR, flags.VARS, flags.PROFILE, flags.TARGET, threads)
+  File "A:\just_eat_usecase\localdev\lib\site-packages\dbt\config\runtime.py", line 79, in load_profile
+    profile = Profile.render(
+  File "A:\just_eat_usecase\localdev\lib\site-packages\dbt\config\profile.py", line 402, in render
+    return cls.from_raw_profiles(
+  File "A:\just_eat_usecase\localdev\lib\site-packages\dbt\config\profile.py", line 368, in from_raw_profiles
+    return cls.from_raw_profile_info(
+  File "A:\just_eat_usecase\localdev\lib\site-packages\dbt\config\profile.py", line 324, in from_raw_profile_info
+    credentials: Credentials = cls._credentials_from_profile(
+  File "A:\just_eat_usecase\localdev\lib\site-packages\dbt\config\profile.py", line 148, in _credentials_from_profile
+    cls = load_plugin(typename)
+  File "A:\just_eat_usecase\localdev\lib\site-packages\dbt\adapters\factory.py", line 239, in load_plugin
+    return FACTORY.load_plugin(name)
+  File "A:\just_eat_usecase\localdev\lib\site-packages\dbt\adapters\factory.py", line 68, in load_plugin
+    mod: Any = import_module("." + name, "dbt.adapters")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "A:\just_eat_usecase\localdev\lib\site-packages\dbt\adapters\bigquery\__init__.py", line 1, in <module>
+    from dbt.adapters.bigquery.column import BigQueryColumn
+  File "A:\just_eat_usecase\localdev\lib\site-packages\dbt\adapters\bigquery\column.py", line 4, in <module>
+    from google.cloud.bigquery import SchemaField
+  File "A:\just_eat_usecase\localdev\lib\site-packages\google\cloud\bigquery\__init__.py", line 36, in <module>
+    from google.cloud.bigquery.client import Client
+  File "A:\just_eat_usecase\localdev\lib\site-packages\google\cloud\bigquery\client.py", line 72, in <module>
+    from google.cloud.bigquery import _job_helpers
+  File "A:\just_eat_usecase\localdev\lib\site-packages\google\cloud\bigquery\_job_helpers.py", line 47, in <module>
+    from google.cloud.bigquery import job
+  File "A:\just_eat_usecase\localdev\lib\site-packages\google\cloud\bigquery\job\__init__.py", line 27, in <module>
+    from google.cloud.bigquery.job.copy_ import CopyJob
+  File "A:\just_eat_usecase\localdev\lib\site-packages\google\cloud\bigquery\job\copy_.py", line 22, in <module>
+    from google.cloud.bigquery.table import TableReference
+  File "A:\just_eat_usecase\localdev\lib\site-packages\google\cloud\bigquery\table.py", line 28, in <module>
+    import pandas  # type: ignore
+  File "A:\just_eat_usecase\localdev\lib\site-packages\pandas\__init__.py", line 62, in <module>
+    from pandas.core.api import (
+  File "A:\just_eat_usecase\localdev\lib\site-packages\pandas\core\api.py", line 28, in <module>
+    from pandas.core.arrays import Categorical
+  File "A:\just_eat_usecase\localdev\lib\site-packages\pandas\core\arrays\__init__.py", line 1, in <module>
+    from pandas.core.arrays.arrow import ArrowExtensionArray
+  File "A:\just_eat_usecase\localdev\lib\site-packages\pandas\core\arrays\arrow\__init__.py", line 1, in <module>
+    from pandas.core.arrays.arrow.accessors import (
+  File "A:\just_eat_usecase\localdev\lib\site-packages\pandas\core\arrays\arrow\accessors.py", line 23, in <module>
+    import pyarrow.compute as pc
+  File "A:\just_eat_usecase\localdev\lib\site-packages\pyarrow\compute.py", line 336, in <module>
+    _make_global_functions()
+  File "A:\just_eat_usecase\localdev\lib\site-packages\pyarrow\compute.py", line 333, in _make_global_functions
+    g[cpp_name] = g[name] = _wrap_function(name, func)
+  File "A:\just_eat_usecase\localdev\lib\site-packages\pyarrow\compute.py", line 304, in _wrap_function
+    return _decorate_compute_function(wrapper, name, func, options_class)
+  File "A:\just_eat_usecase\localdev\lib\site-packages\pyarrow\compute.py", line 153, in _decorate_compute_function
+    doc_pieces.append(dedent("""\
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\textwrap.py", line 438, in dedent
+    text = _whitespace_only_re.sub('', text)
+KeyboardInterrupt
+
+[0m12:38:22.263234 [debug] [MainThread]: Command `dbt run` failed at 12:38:22.263234 after 1.12 seconds
+[0m12:38:22.265243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221576524A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002215868A680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221597E2590>]}
+[0m12:38:22.266911 [debug] [MainThread]: Flushing usage events
+[0m12:38:22.697979 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:38:31.281466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C816552440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C817E5B610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C817E5B790>]}
+
+
+============================== 12:38:31.287843 | 064ddb07-b3d3-4059-b3ce-7fa11f2e303b ==============================
+[0m12:38:31.287843 [info ] [MainThread]: Running with dbt=1.9.2
+[0m12:38:31.289890 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'A:\\just_eat_usecase\\just_eat_priyank\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\pratheepkumaar\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:38:31.314650 [info ] [MainThread]: dbt version: 1.9.2
+[0m12:38:31.316780 [info ] [MainThread]: python version: 3.10.11
+[0m12:38:31.318771 [info ] [MainThread]: python path: A:\just_eat_usecase\localdev\Scripts\python.exe
+[0m12:38:31.319771 [info ] [MainThread]: os info: Windows-10-10.0.19044-SP0
+[0m12:38:32.679534 [info ] [MainThread]: Using profiles dir at C:\Users\pratheepkumaar\.dbt
+[0m12:38:32.688462 [info ] [MainThread]: Using profiles.yml file at C:\Users\pratheepkumaar\.dbt\profiles.yml
+[0m12:38:32.689825 [info ] [MainThread]: Using dbt_project.yml file at A:\just_eat_usecase\just_eat_priyank\dbt_project.yml
+[0m12:38:32.690988 [info ] [MainThread]: adapter type: bigquery
+[0m12:38:32.692006 [info ] [MainThread]: adapter version: 1.9.1
+[0m12:38:32.947229 [info ] [MainThread]: Configuration:
+[0m12:38:32.951543 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:38:32.953073 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:38:32.955072 [info ] [MainThread]: Required dependencies:
+[0m12:38:32.956070 [debug] [MainThread]: Executing "git --help"
+[0m12:38:33.033161 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:38:33.034199 [debug] [MainThread]: STDERR: "b''"
+[0m12:38:33.035987 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:38:33.038358 [info ] [MainThread]: Connection:
+[0m12:38:33.040788 [info ] [MainThread]:   method: service-account
+[0m12:38:33.043232 [info ] [MainThread]:   database: just-eat-451011
+[0m12:38:33.045227 [info ] [MainThread]:   execution_project: just-eat-451011
+[0m12:38:33.047231 [info ] [MainThread]:   schema: just_eat_dataset
+[0m12:38:33.049422 [info ] [MainThread]:   location: EU
+[0m12:38:33.051529 [info ] [MainThread]:   priority: interactive
+[0m12:38:33.053530 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m12:38:33.057477 [info ] [MainThread]:   impersonate_service_account: None
+[0m12:38:33.059304 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m12:38:33.062408 [info ] [MainThread]:   job_retries: 1
+[0m12:38:33.064549 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m12:38:33.067460 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m12:38:33.069913 [info ] [MainThread]:   timeout_seconds: 300
+[0m12:38:33.072638 [info ] [MainThread]:   client_id: None
+[0m12:38:33.075902 [info ] [MainThread]:   token_uri: None
+[0m12:38:33.078643 [info ] [MainThread]:   dataproc_region: None
+[0m12:38:33.081022 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m12:38:33.083479 [info ] [MainThread]:   gcs_bucket: None
+[0m12:38:33.086886 [info ] [MainThread]:   dataproc_batch: None
+[0m12:38:33.090771 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m12:38:33.828611 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m12:38:33.828611 [debug] [MainThread]: On debug: select 1 as id
+[0m12:38:33.828611 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:38:34.350319 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:43c99dfc-7948-4d72-a0d9-69a29d5779b5&page=queryresults
+[0m12:38:34.863194 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:38:34.867098 [info ] [MainThread]: [32mAll checks passed![0m
+[0m12:38:34.870550 [debug] [MainThread]: Command `dbt debug` succeeded at 12:38:34.870550 after 3.73 seconds
+[0m12:38:34.870550 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:38:34.878479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C816552440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C817E5B940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C82946A1A0>]}
+[0m12:38:34.881671 [debug] [MainThread]: Flushing usage events
+[0m12:38:35.264106 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:42:13.539284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015E26D4E470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015E2865BB20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015E28659D80>]}
+
+
+============================== 17:42:13.546266 | 31a6f34f-1bb8-463b-9073-c3fe15f65fd4 ==============================
+[0m17:42:13.546266 [info ] [MainThread]: Running with dbt=1.9.2
+[0m17:42:13.547272 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\pratheepkumaar\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'A:\\just_eat_usecase\\just_eat_priyank\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --select analytics_layer', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:42:19.655346 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '31a6f34f-1bb8-463b-9073-c3fe15f65fd4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015E39A38850>]}
+[0m17:42:19.800354 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '31a6f34f-1bb8-463b-9073-c3fe15f65fd4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015E2832F7C0>]}
+[0m17:42:19.802348 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m17:42:20.572119 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m17:42:22.328631 [debug] [MainThread]: Partial parsing enabled: 2 files deleted, 3 files added, 0 files changed.
+[0m17:42:22.329592 [debug] [MainThread]: Partial parsing: added file: just_eat_priyank://models\analytics_layer\metrics.sql
+[0m17:42:22.330595 [debug] [MainThread]: Partial parsing: added file: just_eat_priyank://models\staging\schema.yml
+[0m17:42:22.331607 [debug] [MainThread]: Partial parsing: added file: just_eat_priyank://models\staging\stg_reviews.sql
+[0m17:42:22.331607 [debug] [MainThread]: Partial parsing: deleted file: just_eat_priyank://seeds\metadata_category_clothing_shoes_and_jewelry_only.csv
+[0m17:42:22.333602 [debug] [MainThread]: Partial parsing: deleted file: just_eat_priyank://seeds\reviews_Clothing_Shoes_and_Jewelry_5.csv
+[0m17:42:22.724592 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found two schema.yml entries for the same resource named my_first_dbt_model. Resources and their associated columns may only be described a single time. To fix this, remove the resource entry for my_first_dbt_model in one of these files:
+   - models\staging\schema.yml
+  models\example\schema.yml
+[0m17:42:22.726624 [debug] [MainThread]: Command `dbt run` failed at 17:42:22.726624 after 9.33 seconds
+[0m17:42:22.727676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015E26D4E470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015E3A529570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015E3A529540>]}
+[0m17:42:22.728663 [debug] [MainThread]: Flushing usage events
+[0m17:42:23.138113 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:42:59.937983 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC52752470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC5405BB20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC54059D80>]}
+
+
+============================== 17:42:59.942982 | 0d670e2a-6cb4-4a48-b9db-a6ad2f79744e ==============================
+[0m17:42:59.942982 [info ] [MainThread]: Running with dbt=1.9.2
+[0m17:42:59.944987 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'A:\\just_eat_usecase\\just_eat_priyank\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\pratheepkumaar\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run --select analytics_layer', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:43:01.361013 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0d670e2a-6cb4-4a48-b9db-a6ad2f79744e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC6514CCA0>]}
+[0m17:43:01.545024 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0d670e2a-6cb4-4a48-b9db-a6ad2f79744e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC53799DB0>]}
+[0m17:43:01.547980 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m17:43:02.163979 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m17:43:02.470014 [debug] [MainThread]: Partial parsing enabled: 2 files deleted, 1 files added, 0 files changed.
+[0m17:43:02.471014 [debug] [MainThread]: Partial parsing: added file: just_eat_priyank://models\analytics_layer\metrics.sql
+[0m17:43:02.471978 [debug] [MainThread]: Partial parsing: deleted file: just_eat_priyank://seeds\reviews_Clothing_Shoes_and_Jewelry_5.csv
+[0m17:43:02.472982 [debug] [MainThread]: Partial parsing: deleted file: just_eat_priyank://seeds\metadata_category_clothing_shoes_and_jewelry_only.csv
+[0m17:43:02.866010 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0d670e2a-6cb4-4a48-b9db-a6ad2f79744e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC65ED41C0>]}
+[0m17:43:03.028984 [debug] [MainThread]: Wrote artifact WritableManifest to A:\just_eat_usecase\just_eat_priyank\target\manifest.json
+[0m17:43:03.051660 [debug] [MainThread]: Wrote artifact SemanticManifest to A:\just_eat_usecase\just_eat_priyank\target\semantic_manifest.json
+[0m17:43:03.416657 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0d670e2a-6cb4-4a48-b9db-a6ad2f79744e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC6597CD90>]}
+[0m17:43:03.417660 [info ] [MainThread]: Found 3 models, 4 data tests, 491 macros
+[0m17:43:03.418656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0d670e2a-6cb4-4a48-b9db-a6ad2f79744e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC6597CFA0>]}
+[0m17:43:03.420655 [info ] [MainThread]: 
+[0m17:43:03.422656 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:43:03.424658 [info ] [MainThread]: 
+[0m17:43:03.425655 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:43:03.428659 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_just-eat-451011'
+[0m17:43:03.429666 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:43:03.775231 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_just-eat-451011_just_eat_dataset'
+[0m17:43:03.775231 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:43:04.009324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0d670e2a-6cb4-4a48-b9db-a6ad2f79744e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC65915780>]}
+[0m17:43:04.010323 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:43:04.018288 [debug] [Thread-1 (]: Began running node model.just_eat_priyank.metrics
+[0m17:43:04.019290 [info ] [Thread-1 (]: 1 of 1 START sql view model just_eat_dataset.metrics ........................... [RUN]
+[0m17:43:04.021743 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.just_eat_priyank.metrics'
+[0m17:43:04.022743 [debug] [Thread-1 (]: Began compiling node model.just_eat_priyank.metrics
+[0m17:43:04.035720 [debug] [Thread-1 (]: Writing injected SQL for node "model.just_eat_priyank.metrics"
+[0m17:43:04.037753 [debug] [Thread-1 (]: Began executing node model.just_eat_priyank.metrics
+[0m17:43:04.119715 [debug] [Thread-1 (]: Writing runtime sql for node "model.just_eat_priyank.metrics"
+[0m17:43:04.123714 [debug] [Thread-1 (]: On model.just_eat_priyank.metrics: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "just_eat_priyank", "target_name": "dev", "node_id": "model.just_eat_priyank.metrics"} */
+
+
+  create or replace view `just-eat-451011`.`just_eat_dataset`.`metrics`
+  OPTIONS()
+  as WITH ReviewStats AS (
+    SELECT
+        d.year_month,  
+        c.categories_name,
+        ROUND(AVG(f.average_rating), 2) AS avg_review_rating,
+        COUNT(f.review_count) AS total_reviews
+    FROM just_eat_dataset.Fact_Reviews f
+    LEFT JOIN just_eat_dataset.Dim_Categories c ON f.categories_id = c.categories_id
+    LEFT JOIN just_eat_dataset.Dim_Date d ON f.date_id = d.date_id
+    GROUP BY d.year_month, c.categories_name
+)
+SELECT *
+FROM ReviewStats
+ORDER BY year_month DESC, avg_review_rating DESC;;
+
+
+[0m17:43:04.125716 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:43:04.412911 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:abd2b921-d759-48b1-a9c6-1e1fe9841123&page=queryresults
+[0m17:43:04.414911 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:abd2b921-d759-48b1-a9c6-1e1fe9841123&page=queryresults
+[0m17:43:04.534364 [debug] [Thread-1 (]: Database Error in model metrics (models\analytics_layer\metrics.sql)
+  Syntax error: Unexpected ";" at [19:50]
+  compiled code at target\run\just_eat_priyank\models\analytics_layer\metrics.sql
+[0m17:43:04.543921 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0d670e2a-6cb4-4a48-b9db-a6ad2f79744e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC522D37C0>]}
+[0m17:43:04.544902 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model just_eat_dataset.metrics .................. [[31mERROR[0m in 0.51s]
+[0m17:43:04.546901 [debug] [Thread-1 (]: Finished running node model.just_eat_priyank.metrics
+[0m17:43:04.549535 [debug] [Thread-4 (]: Marking all children of 'model.just_eat_priyank.metrics' to be skipped because of status 'error'.  Reason: Database Error in model metrics (models\analytics_layer\metrics.sql)
+  Syntax error: Unexpected ";" at [19:50]
+  compiled code at target\run\just_eat_priyank\models\analytics_layer\metrics.sql.
+[0m17:43:04.552901 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:43:04.554934 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:43:04.555934 [debug] [MainThread]: Connection 'list_just-eat-451011' was properly closed.
+[0m17:43:04.556900 [debug] [MainThread]: Connection 'list_just-eat-451011_just_eat_dataset' was properly closed.
+[0m17:43:04.557897 [debug] [MainThread]: Connection 'model.just_eat_priyank.metrics' was properly closed.
+[0m17:43:04.558899 [info ] [MainThread]: 
+[0m17:43:04.559908 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.13 seconds (1.13s).
+[0m17:43:04.563924 [debug] [MainThread]: Command end result
+[0m17:43:04.601903 [debug] [MainThread]: Wrote artifact WritableManifest to A:\just_eat_usecase\just_eat_priyank\target\manifest.json
+[0m17:43:04.604905 [debug] [MainThread]: Wrote artifact SemanticManifest to A:\just_eat_usecase\just_eat_priyank\target\semantic_manifest.json
+[0m17:43:04.615694 [debug] [MainThread]: Wrote artifact RunExecutionResult to A:\just_eat_usecase\just_eat_priyank\target\run_results.json
+[0m17:43:04.616704 [info ] [MainThread]: 
+[0m17:43:04.618727 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m17:43:04.619941 [info ] [MainThread]: 
+[0m17:43:04.621975 [error] [MainThread]:   Database Error in model metrics (models\analytics_layer\metrics.sql)
+  Syntax error: Unexpected ";" at [19:50]
+  compiled code at target\run\just_eat_priyank\models\analytics_layer\metrics.sql
+[0m17:43:04.622984 [info ] [MainThread]: 
+[0m17:43:04.624994 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m17:43:04.627974 [debug] [MainThread]: Command `dbt run` failed at 17:43:04.627011 after 4.81 seconds
+[0m17:43:04.628977 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC52752470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC65EC8C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC6594EC20>]}
+[0m17:43:04.629974 [debug] [MainThread]: Flushing usage events
+[0m17:43:05.042478 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:43:23.843609 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F612652440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F613D5B610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F613D5B790>]}
+
+
+============================== 17:43:23.851610 | 1e57ed13-487e-4151-a8b3-624d4fde4bd3 ==============================
+[0m17:43:23.851610 [info ] [MainThread]: Running with dbt=1.9.2
+[0m17:43:23.853601 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\pratheepkumaar\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'A:\\just_eat_usecase\\just_eat_priyank\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:43:23.898231 [info ] [MainThread]: dbt version: 1.9.2
+[0m17:43:23.900228 [info ] [MainThread]: python version: 3.10.11
+[0m17:43:23.900896 [info ] [MainThread]: python path: A:\just_eat_usecase\localdev\Scripts\python.exe
+[0m17:43:23.902929 [info ] [MainThread]: os info: Windows-10-10.0.19044-SP0
+[0m17:43:25.113160 [info ] [MainThread]: Using profiles dir at C:\Users\pratheepkumaar\.dbt
+[0m17:43:25.114139 [info ] [MainThread]: Using profiles.yml file at C:\Users\pratheepkumaar\.dbt\profiles.yml
+[0m17:43:25.116118 [info ] [MainThread]: Using dbt_project.yml file at A:\just_eat_usecase\just_eat_priyank\dbt_project.yml
+[0m17:43:25.118139 [info ] [MainThread]: adapter type: bigquery
+[0m17:43:25.119181 [info ] [MainThread]: adapter version: 1.9.1
+[0m17:43:25.339157 [info ] [MainThread]: Configuration:
+[0m17:43:25.340120 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:43:25.342716 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m17:43:25.343726 [info ] [MainThread]: Required dependencies:
+[0m17:43:25.345721 [debug] [MainThread]: Executing "git --help"
+[0m17:43:25.407178 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:43:25.408178 [debug] [MainThread]: STDERR: "b''"
+[0m17:43:25.409144 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:43:25.411633 [info ] [MainThread]: Connection:
+[0m17:43:25.412634 [info ] [MainThread]:   method: service-account
+[0m17:43:25.414663 [info ] [MainThread]:   database: just-eat-451011
+[0m17:43:25.415630 [info ] [MainThread]:   execution_project: just-eat-451011
+[0m17:43:25.417631 [info ] [MainThread]:   schema: just_eat_dataset
+[0m17:43:25.418646 [info ] [MainThread]:   location: EU
+[0m17:43:25.419668 [info ] [MainThread]:   priority: interactive
+[0m17:43:25.421654 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m17:43:25.422630 [info ] [MainThread]:   impersonate_service_account: None
+[0m17:43:25.424634 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m17:43:25.425634 [info ] [MainThread]:   job_retries: 1
+[0m17:43:25.427656 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m17:43:25.429633 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m17:43:25.431635 [info ] [MainThread]:   timeout_seconds: 300
+[0m17:43:25.433631 [info ] [MainThread]:   client_id: None
+[0m17:43:25.434652 [info ] [MainThread]:   token_uri: None
+[0m17:43:25.436631 [info ] [MainThread]:   dataproc_region: None
+[0m17:43:25.437631 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m17:43:25.440632 [info ] [MainThread]:   gcs_bucket: None
+[0m17:43:25.441639 [info ] [MainThread]:   dataproc_batch: None
+[0m17:43:25.443638 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m17:43:26.045651 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m17:43:26.045651 [debug] [MainThread]: On debug: select 1 as id
+[0m17:43:26.046630 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:43:26.373800 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:80770977-53f1-4d69-a1b5-6bc22894e2ba&page=queryresults
+[0m17:43:29.841097 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m17:43:29.843634 [info ] [MainThread]: [32mAll checks passed![0m
+[0m17:43:29.846657 [debug] [MainThread]: Command `dbt debug` succeeded at 17:43:29.845623 after 6.12 seconds
+[0m17:43:29.847622 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m17:43:29.848626 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F612652440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F62556E260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F6254AAF50>]}
+[0m17:43:29.849620 [debug] [MainThread]: Flushing usage events
+[0m17:43:30.260533 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:43:40.013345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB6E564A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB8559FC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB8559510>]}
+
+
+============================== 17:43:40.017345 | fa4c6a66-da59-408d-a1f2-709b07d28220 ==============================
+[0m17:43:40.017345 [info ] [MainThread]: Running with dbt=1.9.2
+[0m17:43:40.019345 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'A:\\just_eat_usecase\\just_eat_priyank\\logs', 'profiles_dir': 'C:\\Users\\pratheepkumaar\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run --select example', 'send_anonymous_usage_stats': 'True'}
+[0m17:43:41.418068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fa4c6a66-da59-408d-a1f2-709b07d28220', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB6F92080>]}
+[0m17:43:41.595128 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fa4c6a66-da59-408d-a1f2-709b07d28220', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB7FF1ED0>]}
+[0m17:43:41.597071 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m17:43:42.197072 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m17:43:42.473810 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:43:42.474779 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:43:42.546813 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fa4c6a66-da59-408d-a1f2-709b07d28220', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024ACA424130>]}
+[0m17:43:42.702792 [debug] [MainThread]: Wrote artifact WritableManifest to A:\just_eat_usecase\just_eat_priyank\target\manifest.json
+[0m17:43:42.709780 [debug] [MainThread]: Wrote artifact SemanticManifest to A:\just_eat_usecase\just_eat_priyank\target\semantic_manifest.json
+[0m17:43:42.746796 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fa4c6a66-da59-408d-a1f2-709b07d28220', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024ACA1D9750>]}
+[0m17:43:42.748779 [info ] [MainThread]: Found 3 models, 4 data tests, 491 macros
+[0m17:43:42.750774 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fa4c6a66-da59-408d-a1f2-709b07d28220', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024ACA1DB550>]}
+[0m17:43:42.753775 [info ] [MainThread]: 
+[0m17:43:42.755776 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:43:42.757776 [info ] [MainThread]: 
+[0m17:43:42.759789 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:43:42.771774 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_just-eat-451011'
+[0m17:43:42.773776 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:43:43.064574 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_just-eat-451011_just_eat_dataset'
+[0m17:43:43.065574 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:43:43.287588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fa4c6a66-da59-408d-a1f2-709b07d28220', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB57CC3D0>]}
+[0m17:43:43.289548 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:43:43.295491 [debug] [Thread-1 (]: Began running node model.just_eat_priyank.my_first_dbt_model
+[0m17:43:43.296530 [info ] [Thread-1 (]: 1 of 2 START sql table model just_eat_dataset.my_first_dbt_model ............... [RUN]
+[0m17:43:43.298523 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.just_eat_priyank.my_first_dbt_model'
+[0m17:43:43.299531 [debug] [Thread-1 (]: Began compiling node model.just_eat_priyank.my_first_dbt_model
+[0m17:43:43.316575 [debug] [Thread-1 (]: Writing injected SQL for node "model.just_eat_priyank.my_first_dbt_model"
+[0m17:43:43.319559 [debug] [Thread-1 (]: Began executing node model.just_eat_priyank.my_first_dbt_model
+[0m17:43:43.343565 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:43:43.573828 [debug] [Thread-1 (]: Writing runtime sql for node "model.just_eat_priyank.my_first_dbt_model"
+[0m17:43:43.575832 [debug] [Thread-1 (]: On model.just_eat_priyank.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "just_eat_priyank", "target_name": "dev", "node_id": "model.just_eat_priyank.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `just-eat-451011`.`just_eat_dataset`.`my_first_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m17:43:43.796283 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:e77791cf-afc1-4d23-87a8-c96a6323bbee&page=queryresults
+[0m17:43:46.127096 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fa4c6a66-da59-408d-a1f2-709b07d28220', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AC9A58A00>]}
+[0m17:43:46.129094 [info ] [Thread-1 (]: 1 of 2 OK created sql table model just_eat_dataset.my_first_dbt_model .......... [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 2.83s]
+[0m17:43:46.131098 [debug] [Thread-1 (]: Finished running node model.just_eat_priyank.my_first_dbt_model
+[0m17:43:46.133119 [debug] [Thread-1 (]: Began running node model.just_eat_priyank.my_second_dbt_model
+[0m17:43:46.134151 [info ] [Thread-1 (]: 2 of 2 START sql view model just_eat_dataset.my_second_dbt_model ............... [RUN]
+[0m17:43:46.136096 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.just_eat_priyank.my_first_dbt_model, now model.just_eat_priyank.my_second_dbt_model)
+[0m17:43:46.137156 [debug] [Thread-1 (]: Began compiling node model.just_eat_priyank.my_second_dbt_model
+[0m17:43:46.141133 [debug] [Thread-1 (]: Writing injected SQL for node "model.just_eat_priyank.my_second_dbt_model"
+[0m17:43:46.143097 [debug] [Thread-1 (]: Began executing node model.just_eat_priyank.my_second_dbt_model
+[0m17:43:46.177096 [debug] [Thread-1 (]: Writing runtime sql for node "model.just_eat_priyank.my_second_dbt_model"
+[0m17:43:46.179097 [debug] [Thread-1 (]: On model.just_eat_priyank.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "just_eat_priyank", "target_name": "dev", "node_id": "model.just_eat_priyank.my_second_dbt_model"} */
+
+
+  create or replace view `just-eat-451011`.`just_eat_dataset`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `just-eat-451011`.`just_eat_dataset`.`my_first_dbt_model`
+where id = 1;
+
+
+[0m17:43:46.181097 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:43:46.524007 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:3db5c4cb-7f2b-484f-a66c-88740ef19f19&page=queryresults
+[0m17:43:46.785895 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fa4c6a66-da59-408d-a1f2-709b07d28220', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024ACA5967D0>]}
+[0m17:43:46.787902 [info ] [Thread-1 (]: 2 of 2 OK created sql view model just_eat_dataset.my_second_dbt_model .......... [[32mCREATE VIEW (0 processed)[0m in 0.65s]
+[0m17:43:46.789900 [debug] [Thread-1 (]: Finished running node model.just_eat_priyank.my_second_dbt_model
+[0m17:43:46.791898 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:43:46.794900 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:43:46.796896 [debug] [MainThread]: Connection 'list_just-eat-451011' was properly closed.
+[0m17:43:46.797895 [debug] [MainThread]: Connection 'list_just-eat-451011_just_eat_dataset' was properly closed.
+[0m17:43:46.798894 [debug] [MainThread]: Connection 'model.just_eat_priyank.my_second_dbt_model' was properly closed.
+[0m17:43:46.800894 [info ] [MainThread]: 
+[0m17:43:46.801894 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 4.04 seconds (4.04s).
+[0m17:43:46.806917 [debug] [MainThread]: Command end result
+[0m17:43:46.871912 [debug] [MainThread]: Wrote artifact WritableManifest to A:\just_eat_usecase\just_eat_priyank\target\manifest.json
+[0m17:43:46.877898 [debug] [MainThread]: Wrote artifact SemanticManifest to A:\just_eat_usecase\just_eat_priyank\target\semantic_manifest.json
+[0m17:43:46.891892 [debug] [MainThread]: Wrote artifact RunExecutionResult to A:\just_eat_usecase\just_eat_priyank\target\run_results.json
+[0m17:43:46.894895 [info ] [MainThread]: 
+[0m17:43:46.896895 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:43:46.897895 [info ] [MainThread]: 
+[0m17:43:46.899901 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m17:43:46.902894 [debug] [MainThread]: Command `dbt run` succeeded at 17:43:46.902894 after 7.02 seconds
+[0m17:43:46.903893 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB6E564A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB7FF1ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024ACA41B370>]}
+[0m17:43:46.904895 [debug] [MainThread]: Flushing usage events
+[0m17:43:47.311542 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:45:15.725102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D6B052470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D6C75BB20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D6C759D80>]}
+
+
+============================== 17:45:15.732104 | 5ea47f8a-139f-4ddd-85fc-b20974d693c1 ==============================
+[0m17:45:15.732104 [info ] [MainThread]: Running with dbt=1.9.2
+[0m17:45:15.734101 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\pratheepkumaar\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'A:\\just_eat_usecase\\just_eat_priyank\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run --select analytics_layer', 'send_anonymous_usage_stats': 'True'}
+[0m17:45:17.140239 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5ea47f8a-139f-4ddd-85fc-b20974d693c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D7DD3A800>]}
+[0m17:45:17.314202 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5ea47f8a-139f-4ddd-85fc-b20974d693c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D7D706DD0>]}
+[0m17:45:17.317219 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m17:45:17.961201 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m17:45:18.293631 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m17:45:18.294632 [debug] [MainThread]: Partial parsing: updated file: just_eat_priyank://models\analytics_layer\metrics.sql
+[0m17:45:18.740597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ea47f8a-139f-4ddd-85fc-b20974d693c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D7E7B0130>]}
+[0m17:45:18.955599 [debug] [MainThread]: Wrote artifact WritableManifest to A:\just_eat_usecase\just_eat_priyank\target\manifest.json
+[0m17:45:18.962597 [debug] [MainThread]: Wrote artifact SemanticManifest to A:\just_eat_usecase\just_eat_priyank\target\semantic_manifest.json
+[0m17:45:18.994597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5ea47f8a-139f-4ddd-85fc-b20974d693c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D7E3D9960>]}
+[0m17:45:18.995598 [info ] [MainThread]: Found 3 models, 4 data tests, 491 macros
+[0m17:45:18.997617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5ea47f8a-139f-4ddd-85fc-b20974d693c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D7E3D9930>]}
+[0m17:45:19.001614 [info ] [MainThread]: 
+[0m17:45:19.004598 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:45:19.005613 [info ] [MainThread]: 
+[0m17:45:19.007600 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:45:19.009609 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_just-eat-451011'
+[0m17:45:19.010616 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:45:19.308811 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_just-eat-451011_just_eat_dataset'
+[0m17:45:19.310840 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:45:19.536079 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5ea47f8a-139f-4ddd-85fc-b20974d693c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D6AA19CC0>]}
+[0m17:45:19.537114 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:45:19.544109 [debug] [Thread-1 (]: Began running node model.just_eat_priyank.metrics
+[0m17:45:19.546112 [info ] [Thread-1 (]: 1 of 1 START sql view model just_eat_dataset.metrics ........................... [RUN]
+[0m17:45:19.548110 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.just_eat_priyank.metrics'
+[0m17:45:19.549111 [debug] [Thread-1 (]: Began compiling node model.just_eat_priyank.metrics
+[0m17:45:19.562116 [debug] [Thread-1 (]: Writing injected SQL for node "model.just_eat_priyank.metrics"
+[0m17:45:19.564118 [debug] [Thread-1 (]: Began executing node model.just_eat_priyank.metrics
+[0m17:45:19.626110 [debug] [Thread-1 (]: Writing runtime sql for node "model.just_eat_priyank.metrics"
+[0m17:45:19.628119 [debug] [Thread-1 (]: On model.just_eat_priyank.metrics: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "just_eat_priyank", "target_name": "dev", "node_id": "model.just_eat_priyank.metrics"} */
+
+
+  create or replace view `just-eat-451011`.`just_eat_dataset`.`metrics`
+  OPTIONS()
+  as WITH
+    ReviewStats
+    AS
+    (
+        SELECT
+            d.year_month,
+            c.categories_name,
+            ROUND(AVG(f.average_rating), 2) AS avg_review_rating,
+            COUNT(f.review_count) AS total_reviews
+        FROM just_eat_dataset.Fact_Reviews f
+            LEFT JOIN just_eat_dataset.Dim_Categories c ON f.categories_id = c.categories_id
+            LEFT JOIN just_eat_dataset.Dim_Date d ON f.date_id = d.date_id
+        GROUP BY d.year_month, c.categories_name
+    )
+SELECT *
+FROM ReviewStats
+ORDER BY year_month DESC, avg_review_rating DESC;
+
+
+[0m17:45:19.630109 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:45:20.117119 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:45b03b13-17f4-4261-8154-7892b5f165c5&page=queryresults
+[0m17:45:20.511118 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5ea47f8a-139f-4ddd-85fc-b20974d693c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D7DC56350>]}
+[0m17:45:20.513151 [info ] [Thread-1 (]: 1 of 1 OK created sql view model just_eat_dataset.metrics ...................... [[32mCREATE VIEW (0 processed)[0m in 0.96s]
+[0m17:45:20.516018 [debug] [Thread-1 (]: Finished running node model.just_eat_priyank.metrics
+[0m17:45:20.518086 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:45:20.522014 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:45:20.523013 [debug] [MainThread]: Connection 'list_just-eat-451011' was properly closed.
+[0m17:45:20.524014 [debug] [MainThread]: Connection 'list_just-eat-451011_just_eat_dataset' was properly closed.
+[0m17:45:20.525014 [debug] [MainThread]: Connection 'model.just_eat_priyank.metrics' was properly closed.
+[0m17:45:20.526017 [info ] [MainThread]: 
+[0m17:45:20.527032 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.52 seconds (1.52s).
+[0m17:45:20.529055 [debug] [MainThread]: Command end result
+[0m17:45:20.576018 [debug] [MainThread]: Wrote artifact WritableManifest to A:\just_eat_usecase\just_eat_priyank\target\manifest.json
+[0m17:45:20.579054 [debug] [MainThread]: Wrote artifact SemanticManifest to A:\just_eat_usecase\just_eat_priyank\target\semantic_manifest.json
+[0m17:45:20.591018 [debug] [MainThread]: Wrote artifact RunExecutionResult to A:\just_eat_usecase\just_eat_priyank\target\run_results.json
+[0m17:45:20.592018 [info ] [MainThread]: 
+[0m17:45:20.594016 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:45:20.595016 [info ] [MainThread]: 
+[0m17:45:20.597035 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m17:45:20.599016 [debug] [MainThread]: Command `dbt run` succeeded at 17:45:20.599016 after 5.04 seconds
+[0m17:45:20.601016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D6B052470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D7E7D6740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D7E722590>]}
+[0m17:45:20.602020 [debug] [MainThread]: Flushing usage events
+[0m17:45:20.996325 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:47:15.010506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000135BD6563B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000135BEDDEAD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000135BEDDECB0>]}
+
+
+============================== 17:47:15.016508 | 55fc72fe-8a04-4784-be18-df3afb689cd9 ==============================
+[0m17:47:15.016508 [info ] [MainThread]: Running with dbt=1.9.2
+[0m17:47:15.018492 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\pratheepkumaar\\.dbt', 'log_path': 'A:\\just_eat_usecase\\just_eat_priyank\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --select analytics_layer', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:47:16.393585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '55fc72fe-8a04-4784-be18-df3afb689cd9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000135D0439540>]}
+[0m17:47:16.638589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '55fc72fe-8a04-4784-be18-df3afb689cd9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000135BEDDEE00>]}
+[0m17:47:16.639589 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m17:47:17.296586 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m17:47:17.583622 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m17:47:17.584587 [debug] [MainThread]: Partial parsing: updated file: just_eat_priyank://models\analytics_layer\metrics.sql
+[0m17:47:17.973620 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '55fc72fe-8a04-4784-be18-df3afb689cd9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000135D0EC28C0>]}
+[0m17:47:18.107613 [debug] [MainThread]: Wrote artifact WritableManifest to A:\just_eat_usecase\just_eat_priyank\target\manifest.json
+[0m17:47:18.114631 [debug] [MainThread]: Wrote artifact SemanticManifest to A:\just_eat_usecase\just_eat_priyank\target\semantic_manifest.json
+[0m17:47:18.144602 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '55fc72fe-8a04-4784-be18-df3afb689cd9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000135D0ED3A30>]}
+[0m17:47:18.145590 [info ] [MainThread]: Found 3 models, 4 data tests, 491 macros
+[0m17:47:18.147609 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '55fc72fe-8a04-4784-be18-df3afb689cd9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000135D0ED3A00>]}
+[0m17:47:18.149624 [info ] [MainThread]: 
+[0m17:47:18.150605 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:47:18.152589 [info ] [MainThread]: 
+[0m17:47:18.154589 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:47:18.156624 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_just-eat-451011'
+[0m17:47:18.157590 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:47:18.444483 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_just-eat-451011_just_eat_dataset'
+[0m17:47:18.446483 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:47:18.674977 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '55fc72fe-8a04-4784-be18-df3afb689cd9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000135D01B6680>]}
+[0m17:47:18.675977 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:47:18.682714 [debug] [Thread-1 (]: Began running node model.just_eat_priyank.metrics
+[0m17:47:18.683716 [info ] [Thread-1 (]: 1 of 1 START sql table model just_eat_dataset.metrics .......................... [RUN]
+[0m17:47:18.685709 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.just_eat_priyank.metrics'
+[0m17:47:18.686710 [debug] [Thread-1 (]: Began compiling node model.just_eat_priyank.metrics
+[0m17:47:18.698712 [debug] [Thread-1 (]: Writing injected SQL for node "model.just_eat_priyank.metrics"
+[0m17:47:18.699722 [debug] [Thread-1 (]: Began executing node model.just_eat_priyank.metrics
+[0m17:47:18.726768 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:47:19.085303 [debug] [Thread-1 (]: Writing runtime sql for node "model.just_eat_priyank.metrics"
+[0m17:47:19.087268 [debug] [Thread-1 (]: On model.just_eat_priyank.metrics: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "just_eat_priyank", "target_name": "dev", "node_id": "model.just_eat_priyank.metrics"} */
+
+  
+    
+
+    create or replace table `just-eat-451011`.`just_eat_dataset`.`metrics`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+WITH
+    ReviewStats
+    AS
+    (
+        SELECT
+            d.year_month,
+            c.categories_name,
+            ROUND(AVG(f.average_rating), 2) AS avg_review_rating,
+            COUNT(f.review_count) AS total_reviews
+        FROM just_eat_dataset.Fact_Reviews f
+            LEFT JOIN just_eat_dataset.Dim_Categories c ON f.categories_id = c.categories_id
+            LEFT JOIN just_eat_dataset.Dim_Date d ON f.date_id = d.date_id
+        GROUP BY d.year_month, c.categories_name
+    )
+SELECT *
+FROM ReviewStats
+ORDER BY year_month DESC, avg_review_rating DESC
+    );
+  
+[0m17:47:19.525244 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:aa737648-3ed3-4113-aee5-031a7eff5d64&page=queryresults
+[0m17:47:22.138442 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '55fc72fe-8a04-4784-be18-df3afb689cd9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000135D0EA2560>]}
+[0m17:47:22.139440 [info ] [Thread-1 (]: 1 of 1 OK created sql table model just_eat_dataset.metrics ..................... [[32mCREATE TABLE (618.0 rows, 14.5 MiB processed)[0m in 3.45s]
+[0m17:47:22.142423 [debug] [Thread-1 (]: Finished running node model.just_eat_priyank.metrics
+[0m17:47:22.145416 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:47:22.148445 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:47:22.149477 [debug] [MainThread]: Connection 'list_just-eat-451011' was properly closed.
+[0m17:47:22.150428 [debug] [MainThread]: Connection 'list_just-eat-451011_just_eat_dataset' was properly closed.
+[0m17:47:22.150428 [debug] [MainThread]: Connection 'model.just_eat_priyank.metrics' was properly closed.
+[0m17:47:22.151440 [info ] [MainThread]: 
+[0m17:47:22.153669 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.00 seconds (4.00s).
+[0m17:47:22.155679 [debug] [MainThread]: Command end result
+[0m17:47:22.192665 [debug] [MainThread]: Wrote artifact WritableManifest to A:\just_eat_usecase\just_eat_priyank\target\manifest.json
+[0m17:47:22.197655 [debug] [MainThread]: Wrote artifact SemanticManifest to A:\just_eat_usecase\just_eat_priyank\target\semantic_manifest.json
+[0m17:47:22.209643 [debug] [MainThread]: Wrote artifact RunExecutionResult to A:\just_eat_usecase\just_eat_priyank\target\run_results.json
+[0m17:47:22.210646 [info ] [MainThread]: 
+[0m17:47:22.212648 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:47:22.214655 [info ] [MainThread]: 
+[0m17:47:22.215664 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m17:47:22.218646 [debug] [MainThread]: Command `dbt run` succeeded at 17:47:22.218646 after 7.33 seconds
+[0m17:47:22.219645 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000135BD6563B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000135BD778580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000135BCFF9DB0>]}
+[0m17:47:22.221647 [debug] [MainThread]: Flushing usage events
+[0m17:47:22.616031 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:48:07.367529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000286B0C52440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000286B23DA590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000286B23DA770>]}
+
+
+============================== 17:48:07.373528 | df20bed9-96bc-417b-b45c-bfd8958a949a ==============================
+[0m17:48:07.373528 [info ] [MainThread]: Running with dbt=1.9.2
+[0m17:48:07.375531 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\pratheepkumaar\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'A:\\just_eat_usecase\\just_eat_priyank\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --select analytics_layer', 'send_anonymous_usage_stats': 'True'}
+[0m17:48:08.842550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'df20bed9-96bc-417b-b45c-bfd8958a949a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000286AF56CF70>]}
+[0m17:48:09.028531 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'df20bed9-96bc-417b-b45c-bfd8958a949a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000286B0D8F4C0>]}
+[0m17:48:09.031530 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m17:48:09.637560 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m17:48:09.977637 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:48:09.978637 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:48:10.063637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'df20bed9-96bc-417b-b45c-bfd8958a949a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000286C422BF10>]}
+[0m17:48:10.195640 [debug] [MainThread]: Wrote artifact WritableManifest to A:\just_eat_usecase\just_eat_priyank\target\manifest.json
+[0m17:48:10.201642 [debug] [MainThread]: Wrote artifact SemanticManifest to A:\just_eat_usecase\just_eat_priyank\target\semantic_manifest.json
+[0m17:48:10.230656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'df20bed9-96bc-417b-b45c-bfd8958a949a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000286C3FBD2A0>]}
+[0m17:48:10.232649 [info ] [MainThread]: Found 3 models, 4 data tests, 491 macros
+[0m17:48:10.233637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'df20bed9-96bc-417b-b45c-bfd8958a949a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000286C3FBD8D0>]}
+[0m17:48:10.236641 [info ] [MainThread]: 
+[0m17:48:10.237697 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:48:10.239652 [info ] [MainThread]: 
+[0m17:48:10.241639 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:48:10.243640 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_just-eat-451011'
+[0m17:48:10.244673 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:48:10.529445 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_just-eat-451011_just_eat_dataset'
+[0m17:48:10.530440 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:48:10.753356 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'df20bed9-96bc-417b-b45c-bfd8958a949a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000286B2399360>]}
+[0m17:48:10.754351 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:48:10.760957 [debug] [Thread-1 (]: Began running node model.just_eat_priyank.metrics
+[0m17:48:10.762010 [info ] [Thread-1 (]: 1 of 1 START sql table model just_eat_dataset.metrics .......................... [RUN]
+[0m17:48:10.763997 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.just_eat_priyank.metrics'
+[0m17:48:10.764987 [debug] [Thread-1 (]: Began compiling node model.just_eat_priyank.metrics
+[0m17:48:10.778988 [debug] [Thread-1 (]: Writing injected SQL for node "model.just_eat_priyank.metrics"
+[0m17:48:10.779989 [debug] [Thread-1 (]: Began executing node model.just_eat_priyank.metrics
+[0m17:48:10.801988 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:48:11.053005 [debug] [Thread-1 (]: Writing runtime sql for node "model.just_eat_priyank.metrics"
+[0m17:48:11.056967 [debug] [Thread-1 (]: On model.just_eat_priyank.metrics: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "just_eat_priyank", "target_name": "dev", "node_id": "model.just_eat_priyank.metrics"} */
+
+  
+    
+
+    create or replace table `just-eat-451011`.`just_eat_dataset`.`metrics`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+WITH
+    ReviewStats
+    AS
+    (
+        SELECT
+            d.year_month,
+            c.categories_name,
+            ROUND(AVG(f.average_rating), 2) AS avg_review_rating,
+            COUNT(f.review_count) AS total_reviews
+        FROM just_eat_dataset.Fact_Reviews f
+            LEFT JOIN just_eat_dataset.Dim_Categories c ON f.categories_id = c.categories_id
+            LEFT JOIN just_eat_dataset.Dim_Date d ON f.date_id = d.date_id
+        GROUP BY d.year_month, c.categories_name
+    )
+SELECT *
+FROM ReviewStats
+ORDER BY year_month DESC, avg_review_rating DESC
+    );
+  
+[0m17:48:11.344023 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:816e9077-b827-452f-b93d-538b455c9378&page=queryresults
+[0m17:48:14.022352 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'df20bed9-96bc-417b-b45c-bfd8958a949a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000286C3FBE590>]}
+[0m17:48:14.023355 [info ] [Thread-1 (]: 1 of 1 OK created sql table model just_eat_dataset.metrics ..................... [[32mCREATE TABLE (618.0 rows, 14.5 MiB processed)[0m in 3.26s]
+[0m17:48:14.026335 [debug] [Thread-1 (]: Finished running node model.just_eat_priyank.metrics
+[0m17:48:14.029317 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:48:14.031317 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:48:14.032317 [debug] [MainThread]: Connection 'list_just-eat-451011' was properly closed.
+[0m17:48:14.033317 [debug] [MainThread]: Connection 'list_just-eat-451011_just_eat_dataset' was properly closed.
+[0m17:48:14.033317 [debug] [MainThread]: Connection 'model.just_eat_priyank.metrics' was properly closed.
+[0m17:48:14.034318 [info ] [MainThread]: 
+[0m17:48:14.035528 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 3.79 seconds (3.79s).
+[0m17:48:14.038578 [debug] [MainThread]: Command end result
+[0m17:48:14.077543 [debug] [MainThread]: Wrote artifact WritableManifest to A:\just_eat_usecase\just_eat_priyank\target\manifest.json
+[0m17:48:14.080570 [debug] [MainThread]: Wrote artifact SemanticManifest to A:\just_eat_usecase\just_eat_priyank\target\semantic_manifest.json
+[0m17:48:14.090599 [debug] [MainThread]: Wrote artifact RunExecutionResult to A:\just_eat_usecase\just_eat_priyank\target\run_results.json
+[0m17:48:14.092548 [info ] [MainThread]: 
+[0m17:48:14.093542 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:48:14.096544 [info ] [MainThread]: 
+[0m17:48:14.097559 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m17:48:14.099541 [debug] [MainThread]: Command `dbt run` succeeded at 17:48:14.099541 after 6.87 seconds
+[0m17:48:14.100577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000286B0C52440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000286B0D8E230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000286C4254070>]}
+[0m17:48:14.101577 [debug] [MainThread]: Flushing usage events
+[0m17:48:14.517929 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:53:09.884824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF6AF52500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF6C8DA710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF6C8DA8F0>]}
+
+
+============================== 17:53:09.892771 | b54379bc-6930-48d7-8c5c-34e3dc32f810 ==============================
+[0m17:53:09.892771 [info ] [MainThread]: Running with dbt=1.9.2
+[0m17:53:09.894768 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\pratheepkumaar\\.dbt', 'log_path': 'A:\\just_eat_usecase\\just_eat_priyank\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run --select analytics_layer', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m17:53:11.299769 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b54379bc-6930-48d7-8c5c-34e3dc32f810', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF6BFE2710>]}
+[0m17:53:11.508770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b54379bc-6930-48d7-8c5c-34e3dc32f810', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF6C2F2710>]}
+[0m17:53:11.510773 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m17:53:12.224772 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m17:53:12.561808 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 2 files added, 0 files changed.
+[0m17:53:12.563774 [debug] [MainThread]: Partial parsing: added file: just_eat_priyank://models\analytics_layer\metrics_categories.sql
+[0m17:53:12.565772 [debug] [MainThread]: Partial parsing: added file: just_eat_priyank://models\analytics_layer\metrics_brand.sql
+[0m17:53:12.567769 [debug] [MainThread]: Partial parsing: deleted file: just_eat_priyank://models\analytics_layer\metrics.sql
+[0m17:53:13.021803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b54379bc-6930-48d7-8c5c-34e3dc32f810', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF7E7C0130>]}
+[0m17:53:13.161802 [debug] [MainThread]: Wrote artifact WritableManifest to A:\just_eat_usecase\just_eat_priyank\target\manifest.json
+[0m17:53:13.167803 [debug] [MainThread]: Wrote artifact SemanticManifest to A:\just_eat_usecase\just_eat_priyank\target\semantic_manifest.json
+[0m17:53:13.198817 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b54379bc-6930-48d7-8c5c-34e3dc32f810', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF7E7C2C80>]}
+[0m17:53:13.200767 [info ] [MainThread]: Found 4 models, 4 data tests, 491 macros
+[0m17:53:13.202771 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b54379bc-6930-48d7-8c5c-34e3dc32f810', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF7E693550>]}
+[0m17:53:13.206804 [info ] [MainThread]: 
+[0m17:53:13.207772 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:53:13.209784 [info ] [MainThread]: 
+[0m17:53:13.211788 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:53:13.219786 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_just-eat-451011'
+[0m17:53:13.221769 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:53:13.537385 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_just-eat-451011_just_eat_dataset'
+[0m17:53:13.538346 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:53:13.763043 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b54379bc-6930-48d7-8c5c-34e3dc32f810', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF699CC400>]}
+[0m17:53:13.764010 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:53:13.770587 [debug] [Thread-1 (]: Began running node model.just_eat_priyank.metrics_brand
+[0m17:53:13.772587 [info ] [Thread-1 (]: 1 of 2 START sql table model just_eat_dataset.metrics_brand .................... [RUN]
+[0m17:53:13.774586 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.just_eat_priyank.metrics_brand'
+[0m17:53:13.776585 [debug] [Thread-1 (]: Began compiling node model.just_eat_priyank.metrics_brand
+[0m17:53:13.787583 [debug] [Thread-1 (]: Writing injected SQL for node "model.just_eat_priyank.metrics_brand"
+[0m17:53:13.789584 [debug] [Thread-1 (]: Began executing node model.just_eat_priyank.metrics_brand
+[0m17:53:13.846616 [debug] [Thread-1 (]: Writing runtime sql for node "model.just_eat_priyank.metrics_brand"
+[0m17:53:13.849606 [debug] [Thread-1 (]: On model.just_eat_priyank.metrics_brand: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "just_eat_priyank", "target_name": "dev", "node_id": "model.just_eat_priyank.metrics_brand"} */
+
+  
+    
+
+    create or replace table `just-eat-451011`.`just_eat_dataset`.`metrics_brand`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+WITH ReviewStats AS (
+    SELECT
+        d.year_month,  
+        b.brand_name,
+        ROUND(AVG(f.average_rating), 2) AS avg_review_rating,
+        COUNT(f.review_count) AS total_reviews
+    FROM just_eat_dataset.Fact_Reviews f
+    LEFT JOIN just_eat_dataset.Dim_Brand b ON f.brand_id = b.brand_id
+    LEFT JOIN just_eat_dataset.Dim_Date d ON f.date_id = d.date_id
+    GROUP BY d.year_month, b.brand_name
+)
+SELECT *
+FROM ReviewStats
+ORDER BY year_month DESC, avg_review_rating DESC;
+    );
+  
+[0m17:53:13.851589 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:53:14.111286 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:74940ee6-e382-4f03-ade6-0d2b9eadf47f&page=queryresults
+[0m17:53:14.112286 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:74940ee6-e382-4f03-ade6-0d2b9eadf47f&page=queryresults
+[0m17:53:14.121324 [debug] [Thread-1 (]: Database Error in model metrics_brand (models\analytics_layer\metrics_brand.sql)
+  Syntax error: Expected ")" but got ";" at [28:49]
+  compiled code at target\run\just_eat_priyank\models\analytics_layer\metrics_brand.sql
+[0m17:53:14.126345 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b54379bc-6930-48d7-8c5c-34e3dc32f810', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF6ABB0430>]}
+[0m17:53:14.127344 [error] [Thread-1 (]: 1 of 2 ERROR creating sql table model just_eat_dataset.metrics_brand ........... [[31mERROR[0m in 0.35s]
+[0m17:53:14.130287 [debug] [Thread-1 (]: Finished running node model.just_eat_priyank.metrics_brand
+[0m17:53:14.131287 [debug] [Thread-1 (]: Began running node model.just_eat_priyank.metrics_categories
+[0m17:53:14.132289 [debug] [Thread-4 (]: Marking all children of 'model.just_eat_priyank.metrics_brand' to be skipped because of status 'error'.  Reason: Database Error in model metrics_brand (models\analytics_layer\metrics_brand.sql)
+  Syntax error: Expected ")" but got ";" at [28:49]
+  compiled code at target\run\just_eat_priyank\models\analytics_layer\metrics_brand.sql.
+[0m17:53:14.133310 [info ] [Thread-1 (]: 2 of 2 START sql table model just_eat_dataset.metrics_categories ............... [RUN]
+[0m17:53:14.136288 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.just_eat_priyank.metrics_brand, now model.just_eat_priyank.metrics_categories)
+[0m17:53:14.138315 [debug] [Thread-1 (]: Began compiling node model.just_eat_priyank.metrics_categories
+[0m17:53:14.146290 [debug] [Thread-1 (]: Writing injected SQL for node "model.just_eat_priyank.metrics_categories"
+[0m17:53:14.148314 [debug] [Thread-1 (]: Began executing node model.just_eat_priyank.metrics_categories
+[0m17:53:14.154292 [debug] [Thread-1 (]: Writing runtime sql for node "model.just_eat_priyank.metrics_categories"
+[0m17:53:14.156288 [debug] [Thread-1 (]: On model.just_eat_priyank.metrics_categories: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "just_eat_priyank", "target_name": "dev", "node_id": "model.just_eat_priyank.metrics_categories"} */
+
+  
+    
+
+    create or replace table `just-eat-451011`.`just_eat_dataset`.`metrics_categories`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+WITH
+    ReviewStats
+    AS
+    (
+        SELECT
+            d.year_month,
+            c.categories_name,
+            ROUND(AVG(f.average_rating), 2) AS avg_review_rating,
+            COUNT(f.review_count) AS total_reviews
+        FROM just_eat_dataset.Fact_Reviews f
+            LEFT JOIN just_eat_dataset.Dim_Categories c ON f.categories_id = c.categories_id
+            LEFT JOIN just_eat_dataset.Dim_Date d ON f.date_id = d.date_id
+        GROUP BY d.year_month, c.categories_name
+    )
+SELECT *
+FROM ReviewStats
+ORDER BY year_month DESC, avg_review_rating DESC
+    );
+  
+[0m17:53:14.157285 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:53:14.898300 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:373623ff-60bf-4a8a-975e-20b7fe252678&page=queryresults
+[0m17:53:17.601329 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b54379bc-6930-48d7-8c5c-34e3dc32f810', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF6ABB0430>]}
+[0m17:53:17.603331 [info ] [Thread-1 (]: 2 of 2 OK created sql table model just_eat_dataset.metrics_categories .......... [[32mCREATE TABLE (618.0 rows, 14.5 MiB processed)[0m in 3.46s]
+[0m17:53:17.607331 [debug] [Thread-1 (]: Finished running node model.just_eat_priyank.metrics_categories
+[0m17:53:17.611327 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:53:17.616332 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:53:17.618333 [debug] [MainThread]: Connection 'list_just-eat-451011' was properly closed.
+[0m17:53:17.620328 [debug] [MainThread]: Connection 'list_just-eat-451011_just_eat_dataset' was properly closed.
+[0m17:53:17.622330 [debug] [MainThread]: Connection 'model.just_eat_priyank.metrics_categories' was properly closed.
+[0m17:53:17.623330 [info ] [MainThread]: 
+[0m17:53:17.625331 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 4.41 seconds (4.41s).
+[0m17:53:17.628327 [debug] [MainThread]: Command end result
+[0m17:53:17.758331 [debug] [MainThread]: Wrote artifact WritableManifest to A:\just_eat_usecase\just_eat_priyank\target\manifest.json
+[0m17:53:17.765328 [debug] [MainThread]: Wrote artifact SemanticManifest to A:\just_eat_usecase\just_eat_priyank\target\semantic_manifest.json
+[0m17:53:17.809334 [debug] [MainThread]: Wrote artifact RunExecutionResult to A:\just_eat_usecase\just_eat_priyank\target\run_results.json
+[0m17:53:17.811329 [info ] [MainThread]: 
+[0m17:53:17.814330 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m17:53:17.816327 [info ] [MainThread]: 
+[0m17:53:17.818328 [error] [MainThread]:   Database Error in model metrics_brand (models\analytics_layer\metrics_brand.sql)
+  Syntax error: Expected ")" but got ";" at [28:49]
+  compiled code at target\run\just_eat_priyank\models\analytics_layer\metrics_brand.sql
+[0m17:53:17.821331 [info ] [MainThread]: 
+[0m17:53:17.823330 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+[0m17:53:17.827335 [debug] [MainThread]: Command `dbt run` failed at 17:53:17.827335 after 8.10 seconds
+[0m17:53:17.829332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF6AF52500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF6C2F2710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF6C52EC20>]}
+[0m17:53:17.830330 [debug] [MainThread]: Flushing usage events
+[0m17:53:18.240810 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:53:29.042497 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A31BC4E470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A31D55BB20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A31D559D80>]}
+
+
+============================== 17:53:29.047464 | 8e9184c1-7cc7-4898-b1df-2e20d297f7c0 ==============================
+[0m17:53:29.047464 [info ] [MainThread]: Running with dbt=1.9.2
+[0m17:53:29.049872 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\pratheepkumaar\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'A:\\just_eat_usecase\\just_eat_priyank\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --select analytics_layer', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:53:30.393142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8e9184c1-7cc7-4898-b1df-2e20d297f7c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A32E7B20B0>]}
+[0m17:53:30.535103 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8e9184c1-7cc7-4898-b1df-2e20d297f7c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A32E74CB50>]}
+[0m17:53:30.537105 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m17:53:31.319108 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m17:53:31.662104 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m17:53:31.663105 [debug] [MainThread]: Partial parsing: updated file: just_eat_priyank://models\analytics_layer\metrics_brand.sql
+[0m17:53:32.049113 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8e9184c1-7cc7-4898-b1df-2e20d297f7c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A32EA416C0>]}
+[0m17:53:32.177140 [debug] [MainThread]: Wrote artifact WritableManifest to A:\just_eat_usecase\just_eat_priyank\target\manifest.json
+[0m17:53:32.183101 [debug] [MainThread]: Wrote artifact SemanticManifest to A:\just_eat_usecase\just_eat_priyank\target\semantic_manifest.json
+[0m17:53:32.212102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8e9184c1-7cc7-4898-b1df-2e20d297f7c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A32EFF4220>]}
+[0m17:53:32.214099 [info ] [MainThread]: Found 4 models, 4 data tests, 491 macros
+[0m17:53:32.216104 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8e9184c1-7cc7-4898-b1df-2e20d297f7c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A32EFF5C60>]}
+[0m17:53:32.218104 [info ] [MainThread]: 
+[0m17:53:32.220105 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:53:32.221103 [info ] [MainThread]: 
+[0m17:53:32.222341 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:53:32.229408 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_just-eat-451011'
+[0m17:53:32.231374 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:53:32.562074 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_just-eat-451011_just_eat_dataset'
+[0m17:53:32.563037 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:53:32.937741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8e9184c1-7cc7-4898-b1df-2e20d297f7c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A32E7D6080>]}
+[0m17:53:32.937741 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:53:32.943751 [debug] [Thread-1 (]: Began running node model.just_eat_priyank.metrics_brand
+[0m17:53:32.944736 [info ] [Thread-1 (]: 1 of 2 START sql table model just_eat_dataset.metrics_brand .................... [RUN]
+[0m17:53:32.946735 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.just_eat_priyank.metrics_brand'
+[0m17:53:32.947750 [debug] [Thread-1 (]: Began compiling node model.just_eat_priyank.metrics_brand
+[0m17:53:32.958770 [debug] [Thread-1 (]: Writing injected SQL for node "model.just_eat_priyank.metrics_brand"
+[0m17:53:32.960734 [debug] [Thread-1 (]: Began executing node model.just_eat_priyank.metrics_brand
+[0m17:53:33.045781 [debug] [Thread-1 (]: Writing runtime sql for node "model.just_eat_priyank.metrics_brand"
+[0m17:53:33.047738 [debug] [Thread-1 (]: On model.just_eat_priyank.metrics_brand: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "just_eat_priyank", "target_name": "dev", "node_id": "model.just_eat_priyank.metrics_brand"} */
+
+  
+    
+
+    create or replace table `just-eat-451011`.`just_eat_dataset`.`metrics_brand`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+WITH ReviewStats AS (
+    SELECT
+        d.year_month,  
+        b.brand_name,
+        ROUND(AVG(f.average_rating), 2) AS avg_review_rating,
+        COUNT(f.review_count) AS total_reviews
+    FROM just_eat_dataset.Fact_Reviews f
+    LEFT JOIN just_eat_dataset.Dim_Brand b ON f.brand_id = b.brand_id
+    LEFT JOIN just_eat_dataset.Dim_Date d ON f.date_id = d.date_id
+    GROUP BY d.year_month, b.brand_name
+)
+SELECT *
+FROM ReviewStats
+ORDER BY year_month DESC, avg_review_rating DESC
+    );
+  
+[0m17:53:33.048739 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:53:33.593480 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:254261bd-d003-4fa8-a4df-7cb19713afbb&page=queryresults
+[0m17:53:36.540801 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8e9184c1-7cc7-4898-b1df-2e20d297f7c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A32EFF63B0>]}
+[0m17:53:36.541835 [info ] [Thread-1 (]: 1 of 2 OK created sql table model just_eat_dataset.metrics_brand ............... [[32mCREATE TABLE (14.9k rows, 10.0 MiB processed)[0m in 3.59s]
+[0m17:53:36.543804 [debug] [Thread-1 (]: Finished running node model.just_eat_priyank.metrics_brand
+[0m17:53:36.544802 [debug] [Thread-1 (]: Began running node model.just_eat_priyank.metrics_categories
+[0m17:53:36.545835 [info ] [Thread-1 (]: 2 of 2 START sql table model just_eat_dataset.metrics_categories ............... [RUN]
+[0m17:53:36.547802 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.just_eat_priyank.metrics_brand, now model.just_eat_priyank.metrics_categories)
+[0m17:53:36.549802 [debug] [Thread-1 (]: Began compiling node model.just_eat_priyank.metrics_categories
+[0m17:53:36.556806 [debug] [Thread-1 (]: Writing injected SQL for node "model.just_eat_priyank.metrics_categories"
+[0m17:53:36.557801 [debug] [Thread-1 (]: Began executing node model.just_eat_priyank.metrics_categories
+[0m17:53:36.562809 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:53:36.779231 [debug] [Thread-1 (]: Writing runtime sql for node "model.just_eat_priyank.metrics_categories"
+[0m17:53:36.781244 [debug] [Thread-1 (]: On model.just_eat_priyank.metrics_categories: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "just_eat_priyank", "target_name": "dev", "node_id": "model.just_eat_priyank.metrics_categories"} */
+
+  
+    
+
+    create or replace table `just-eat-451011`.`just_eat_dataset`.`metrics_categories`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+WITH
+    ReviewStats
+    AS
+    (
+        SELECT
+            d.year_month,
+            c.categories_name,
+            ROUND(AVG(f.average_rating), 2) AS avg_review_rating,
+            COUNT(f.review_count) AS total_reviews
+        FROM just_eat_dataset.Fact_Reviews f
+            LEFT JOIN just_eat_dataset.Dim_Categories c ON f.categories_id = c.categories_id
+            LEFT JOIN just_eat_dataset.Dim_Date d ON f.date_id = d.date_id
+        GROUP BY d.year_month, c.categories_name
+    )
+SELECT *
+FROM ReviewStats
+ORDER BY year_month DESC, avg_review_rating DESC
+    );
+  
+[0m17:53:37.160774 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:64d9aa28-979e-40a9-8373-e9d2315dfc98&page=queryresults
+[0m17:53:39.745391 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8e9184c1-7cc7-4898-b1df-2e20d297f7c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A31B8B37C0>]}
+[0m17:53:39.746386 [info ] [Thread-1 (]: 2 of 2 OK created sql table model just_eat_dataset.metrics_categories .......... [[32mCREATE TABLE (618.0 rows, 14.5 MiB processed)[0m in 3.20s]
+[0m17:53:39.748352 [debug] [Thread-1 (]: Finished running node model.just_eat_priyank.metrics_categories
+[0m17:53:39.751351 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:53:39.755353 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:53:39.756388 [debug] [MainThread]: Connection 'list_just-eat-451011' was properly closed.
+[0m17:53:39.757351 [debug] [MainThread]: Connection 'list_just-eat-451011_just_eat_dataset' was properly closed.
+[0m17:53:39.758355 [debug] [MainThread]: Connection 'model.just_eat_priyank.metrics_categories' was properly closed.
+[0m17:53:39.759368 [info ] [MainThread]: 
+[0m17:53:39.760353 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 7.54 seconds (7.54s).
+[0m17:53:39.764351 [debug] [MainThread]: Command end result
+[0m17:53:39.802360 [debug] [MainThread]: Wrote artifact WritableManifest to A:\just_eat_usecase\just_eat_priyank\target\manifest.json
+[0m17:53:39.806357 [debug] [MainThread]: Wrote artifact SemanticManifest to A:\just_eat_usecase\just_eat_priyank\target\semantic_manifest.json
+[0m17:53:39.816354 [debug] [MainThread]: Wrote artifact RunExecutionResult to A:\just_eat_usecase\just_eat_priyank\target\run_results.json
+[0m17:53:39.818381 [info ] [MainThread]: 
+[0m17:53:39.819356 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:53:39.821368 [info ] [MainThread]: 
+[0m17:53:39.824110 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m17:53:39.828098 [debug] [MainThread]: Command `dbt run` succeeded at 17:53:39.827101 after 10.92 seconds
+[0m17:53:39.829127 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A31BC4E470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A31A6CEC20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A32F12EC20>]}
+[0m17:53:39.831096 [debug] [MainThread]: Flushing usage events
+[0m17:53:40.205643 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:55:41.751628 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015028D52470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001502A85BB20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001502A859D80>]}
+
+
+============================== 18:55:41.807455 | 6092f9a6-19dd-43ee-972c-081493c48bbf ==============================
+[0m18:55:41.807455 [info ] [MainThread]: Running with dbt=1.9.2
+[0m18:55:41.809749 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'A:\\just_eat_usecase\\just_eat_priyank\\logs', 'profiles_dir': 'C:\\Users\\pratheepkumaar\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run --select analytics_layer', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:55:54.100665 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6092f9a6-19dd-43ee-972c-081493c48bbf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001503BB3A890>]}
+[0m18:55:54.265393 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6092f9a6-19dd-43ee-972c-081493c48bbf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015029352770>]}
+[0m18:55:54.265393 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m18:55:55.100803 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m18:55:57.098050 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m18:55:57.100008 [debug] [MainThread]: Partial parsing: updated file: just_eat_priyank://models\analytics_layer\metrics_brand.sql
+[0m18:55:57.101051 [debug] [MainThread]: Partial parsing: updated file: just_eat_priyank://models\analytics_layer\metrics_categories.sql
+[0m18:55:57.580259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6092f9a6-19dd-43ee-972c-081493c48bbf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001503C7E0130>]}
+[0m18:55:57.757608 [debug] [MainThread]: Wrote artifact WritableManifest to A:\just_eat_usecase\just_eat_priyank\target\manifest.json
+[0m18:55:57.781313 [debug] [MainThread]: Wrote artifact SemanticManifest to A:\just_eat_usecase\just_eat_priyank\target\semantic_manifest.json
+[0m18:55:58.179102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6092f9a6-19dd-43ee-972c-081493c48bbf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001503C2F5960>]}
+[0m18:55:58.186105 [info ] [MainThread]: Found 4 models, 4 data tests, 491 macros
+[0m18:55:58.188110 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6092f9a6-19dd-43ee-972c-081493c48bbf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001503C2F5990>]}
+[0m18:55:58.192031 [info ] [MainThread]: 
+[0m18:55:58.193032 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:55:58.195026 [info ] [MainThread]: 
+[0m18:55:58.197035 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:55:58.212239 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_just-eat-451011'
+[0m18:55:58.214236 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:55:58.641930 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_just-eat-451011_just_eat_dataset'
+[0m18:55:58.642925 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:55:58.886563 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6092f9a6-19dd-43ee-972c-081493c48bbf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001503BB38250>]}
+[0m18:55:58.887565 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:55:59.051871 [debug] [Thread-1 (]: Began running node model.just_eat_priyank.metrics_brand
+[0m18:55:59.053870 [info ] [Thread-1 (]: 1 of 2 START sql view model just_eat_dataset.metrics_brand ..................... [RUN]
+[0m18:55:59.063484 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.just_eat_priyank.metrics_brand'
+[0m18:55:59.065482 [debug] [Thread-1 (]: Began compiling node model.just_eat_priyank.metrics_brand
+[0m18:55:59.089177 [debug] [Thread-1 (]: Writing injected SQL for node "model.just_eat_priyank.metrics_brand"
+[0m18:55:59.110420 [debug] [Thread-1 (]: Began executing node model.just_eat_priyank.metrics_brand
+[0m18:55:59.205910 [debug] [Thread-1 (]: Writing runtime sql for node "model.just_eat_priyank.metrics_brand"
+[0m18:55:59.208457 [debug] [Thread-1 (]: On model.just_eat_priyank.metrics_brand: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "just_eat_priyank", "target_name": "dev", "node_id": "model.just_eat_priyank.metrics_brand"} */
+
+
+  create or replace view `just-eat-451011`.`just_eat_dataset`.`metrics_brand`
+  OPTIONS()
+  as 
+
+WITH
+    ReviewStats
+    AS
+    (
+        SELECT
+            d.year_month,
+            p.brand, -- Get brand from Dim_Product
+            ROUND(AVG(f.average_rating), 2) AS avg_review_rating,
+            SUM(f.review_count) AS total_reviews
+        FROM just_eat_dataset.Fact_Reviews f
+            LEFT JOIN just_eat_dataset.Dim_Product p
+            ON f.asin = p.asin AND p.is_current = TRUE
+            LEFT JOIN just_eat_dataset.Dim_Date d
+            ON f.date_id = d.date_id
+        GROUP BY d.year_month, p.brand
+    )
+SELECT *
+FROM ReviewStats
+ORDER BY year_month DESC, avg_review_rating DESC;;
+
+
+[0m18:55:59.210457 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:55:59.589633 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:7929818b-68f5-4d6a-a637-7cd638f9d760&page=queryresults
+[0m18:55:59.589633 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:7929818b-68f5-4d6a-a637-7cd638f9d760&page=queryresults
+[0m18:55:59.751154 [debug] [Thread-1 (]: Database Error in model metrics_brand (models\analytics_layer\metrics_brand.sql)
+  Syntax error: Unexpected ";" at [26:50]
+  compiled code at target\run\just_eat_priyank\models\analytics_layer\metrics_brand.sql
+[0m18:55:59.766786 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6092f9a6-19dd-43ee-972c-081493c48bbf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015028BB77C0>]}
+[0m18:55:59.766786 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model just_eat_dataset.metrics_brand ............ [[31mERROR[0m in 0.69s]
+[0m18:55:59.766786 [debug] [Thread-1 (]: Finished running node model.just_eat_priyank.metrics_brand
+[0m18:55:59.766786 [debug] [Thread-1 (]: Began running node model.just_eat_priyank.metrics_categories
+[0m18:55:59.766786 [debug] [Thread-4 (]: Marking all children of 'model.just_eat_priyank.metrics_brand' to be skipped because of status 'error'.  Reason: Database Error in model metrics_brand (models\analytics_layer\metrics_brand.sql)
+  Syntax error: Unexpected ";" at [26:50]
+  compiled code at target\run\just_eat_priyank\models\analytics_layer\metrics_brand.sql.
+[0m18:55:59.766786 [info ] [Thread-1 (]: 2 of 2 START sql view model just_eat_dataset.metrics_categories ................ [RUN]
+[0m18:55:59.782406 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.just_eat_priyank.metrics_brand, now model.just_eat_priyank.metrics_categories)
+[0m18:55:59.784685 [debug] [Thread-1 (]: Began compiling node model.just_eat_priyank.metrics_categories
+[0m18:55:59.791754 [debug] [Thread-1 (]: Writing injected SQL for node "model.just_eat_priyank.metrics_categories"
+[0m18:55:59.791754 [debug] [Thread-1 (]: Began executing node model.just_eat_priyank.metrics_categories
+[0m18:55:59.791754 [debug] [Thread-1 (]: Writing runtime sql for node "model.just_eat_priyank.metrics_categories"
+[0m18:55:59.791754 [debug] [Thread-1 (]: On model.just_eat_priyank.metrics_categories: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "just_eat_priyank", "target_name": "dev", "node_id": "model.just_eat_priyank.metrics_categories"} */
+
+
+  create or replace view `just-eat-451011`.`just_eat_dataset`.`metrics_categories`
+  OPTIONS()
+  as 
+
+WITH
+    ReviewStats
+    AS
+    (
+        SELECT
+            d.year_month,
+            p.category, -- Get category from Dim_Product
+            ROUND(AVG(f.average_rating), 2) AS avg_review_rating,
+            SUM(f.review_count) AS total_reviews
+        FROM just_eat_dataset.Fact_Reviews f
+            LEFT JOIN just_eat_dataset.Dim_Product p
+            ON f.asin = p.asin AND p.is_current = TRUE
+            LEFT JOIN just_eat_dataset.Dim_Date d
+            ON f.date_id = d.date_id
+        GROUP BY d.year_month, p.category
+    )
+SELECT *
+FROM ReviewStats
+ORDER BY year_month DESC, avg_review_rating DESC;;
+
+
+[0m18:55:59.801270 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:56:00.030105 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:710e0bed-9566-414e-8cb9-768b787b209c&page=queryresults
+[0m18:56:00.031331 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:710e0bed-9566-414e-8cb9-768b787b209c&page=queryresults
+[0m18:56:00.034717 [debug] [Thread-1 (]: Database Error in model metrics_categories (models\analytics_layer\metrics_categories.sql)
+  Syntax error: Unexpected ";" at [26:50]
+  compiled code at target\run\just_eat_priyank\models\analytics_layer\metrics_categories.sql
+[0m18:56:00.036718 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6092f9a6-19dd-43ee-972c-081493c48bbf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001503CC07CA0>]}
+[0m18:56:00.038718 [error] [Thread-1 (]: 2 of 2 ERROR creating sql view model just_eat_dataset.metrics_categories ....... [[31mERROR[0m in 0.25s]
+[0m18:56:00.041947 [debug] [Thread-1 (]: Finished running node model.just_eat_priyank.metrics_categories
+[0m18:56:00.043945 [debug] [Thread-4 (]: Marking all children of 'model.just_eat_priyank.metrics_categories' to be skipped because of status 'error'.  Reason: Database Error in model metrics_categories (models\analytics_layer\metrics_categories.sql)
+  Syntax error: Unexpected ";" at [26:50]
+  compiled code at target\run\just_eat_priyank\models\analytics_layer\metrics_categories.sql.
+[0m18:56:00.047958 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:56:00.053947 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:56:00.054947 [debug] [MainThread]: Connection 'list_just-eat-451011' was properly closed.
+[0m18:56:00.056948 [debug] [MainThread]: Connection 'list_just-eat-451011_just_eat_dataset' was properly closed.
+[0m18:56:00.058951 [debug] [MainThread]: Connection 'model.just_eat_priyank.metrics_categories' was properly closed.
+[0m18:56:00.060952 [info ] [MainThread]: 
+[0m18:56:00.062949 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 1.86 seconds (1.86s).
+[0m18:56:00.067945 [debug] [MainThread]: Command end result
+[0m18:56:00.134108 [debug] [MainThread]: Wrote artifact WritableManifest to A:\just_eat_usecase\just_eat_priyank\target\manifest.json
+[0m18:56:00.139106 [debug] [MainThread]: Wrote artifact SemanticManifest to A:\just_eat_usecase\just_eat_priyank\target\semantic_manifest.json
+[0m18:56:00.154039 [debug] [MainThread]: Wrote artifact RunExecutionResult to A:\just_eat_usecase\just_eat_priyank\target\run_results.json
+[0m18:56:00.156040 [info ] [MainThread]: 
+[0m18:56:00.160038 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m18:56:00.161038 [info ] [MainThread]: 
+[0m18:56:00.163040 [error] [MainThread]:   Database Error in model metrics_brand (models\analytics_layer\metrics_brand.sql)
+  Syntax error: Unexpected ";" at [26:50]
+  compiled code at target\run\just_eat_priyank\models\analytics_layer\metrics_brand.sql
+[0m18:56:00.165041 [info ] [MainThread]: 
+[0m18:56:00.167042 [error] [MainThread]:   Database Error in model metrics_categories (models\analytics_layer\metrics_categories.sql)
+  Syntax error: Unexpected ";" at [26:50]
+  compiled code at target\run\just_eat_priyank\models\analytics_layer\metrics_categories.sql
+[0m18:56:00.169054 [info ] [MainThread]: 
+[0m18:56:00.170564 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=0 TOTAL=2
+[0m18:56:00.174564 [debug] [MainThread]: Command `dbt run` failed at 18:56:00.174564 after 18.56 seconds
+[0m18:56:00.176563 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015028D52470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015029352770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001503C778E80>]}
+[0m18:56:00.178564 [debug] [MainThread]: Flushing usage events
+[0m18:56:00.551726 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:56:26.161069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E1B952410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E1D2DA560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E1D2DA740>]}
+
+
+============================== 18:56:26.161069 | f75c028b-e5ff-4829-b9a7-3d209584c943 ==============================
+[0m18:56:26.161069 [info ] [MainThread]: Running with dbt=1.9.2
+[0m18:56:26.161069 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\pratheepkumaar\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'A:\\just_eat_usecase\\just_eat_priyank\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --select analytics_layer', 'send_anonymous_usage_stats': 'True'}
+[0m18:56:27.666088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f75c028b-e5ff-4829-b9a7-3d209584c943', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E2E3B31C0>]}
+[0m18:56:27.813380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f75c028b-e5ff-4829-b9a7-3d209584c943', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E1BD53370>]}
+[0m18:56:27.813380 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m18:56:28.531359 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m18:56:28.828234 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m18:56:28.828234 [debug] [MainThread]: Partial parsing: updated file: just_eat_priyank://models\analytics_layer\metrics_brand.sql
+[0m18:56:28.828234 [debug] [MainThread]: Partial parsing: updated file: just_eat_priyank://models\analytics_layer\metrics_categories.sql
+[0m18:56:29.227643 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f75c028b-e5ff-4829-b9a7-3d209584c943', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E2F0C40A0>]}
+[0m18:56:29.384960 [debug] [MainThread]: Wrote artifact WritableManifest to A:\just_eat_usecase\just_eat_priyank\target\manifest.json
+[0m18:56:29.389064 [debug] [MainThread]: Wrote artifact SemanticManifest to A:\just_eat_usecase\just_eat_priyank\target\semantic_manifest.json
+[0m18:56:29.422394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f75c028b-e5ff-4829-b9a7-3d209584c943', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E2EBF4D30>]}
+[0m18:56:29.422394 [info ] [MainThread]: Found 4 models, 4 data tests, 491 macros
+[0m18:56:29.422394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f75c028b-e5ff-4829-b9a7-3d209584c943', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E2EBF4CD0>]}
+[0m18:56:29.422394 [info ] [MainThread]: 
+[0m18:56:29.422394 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:56:29.422394 [info ] [MainThread]: 
+[0m18:56:29.435964 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:56:29.444963 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_just-eat-451011'
+[0m18:56:29.446671 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:56:29.728656 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_just-eat-451011_just_eat_dataset'
+[0m18:56:29.744312 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:56:29.932379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f75c028b-e5ff-4829-b9a7-3d209584c943', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E2EF396C0>]}
+[0m18:56:29.932379 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:56:29.948006 [debug] [Thread-1 (]: Began running node model.just_eat_priyank.metrics_brand
+[0m18:56:29.948006 [info ] [Thread-1 (]: 1 of 2 START sql view model just_eat_dataset.metrics_brand ..................... [RUN]
+[0m18:56:29.948006 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.just_eat_priyank.metrics_brand'
+[0m18:56:29.948006 [debug] [Thread-1 (]: Began compiling node model.just_eat_priyank.metrics_brand
+[0m18:56:29.963661 [debug] [Thread-1 (]: Writing injected SQL for node "model.just_eat_priyank.metrics_brand"
+[0m18:56:29.965946 [debug] [Thread-1 (]: Began executing node model.just_eat_priyank.metrics_brand
+[0m18:56:30.011394 [debug] [Thread-1 (]: Writing runtime sql for node "model.just_eat_priyank.metrics_brand"
+[0m18:56:30.013401 [debug] [Thread-1 (]: On model.just_eat_priyank.metrics_brand: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "just_eat_priyank", "target_name": "dev", "node_id": "model.just_eat_priyank.metrics_brand"} */
+
+
+  create or replace view `just-eat-451011`.`just_eat_dataset`.`metrics_brand`
+  OPTIONS()
+  as 
+
+WITH
+    ReviewStats
+    AS
+    (
+        SELECT
+            d.year_month,
+            p.brand, -- Get brand from Dim_Product
+            ROUND(AVG(f.average_rating), 2) AS avg_review_rating,
+            SUM(f.review_count) AS total_reviews
+        FROM just_eat_dataset.Fact_Reviews f
+            LEFT JOIN just_eat_dataset.Dim_Product p
+            ON f.asin = p.asin AND p.is_current = TRUE
+            LEFT JOIN just_eat_dataset.Dim_Date d
+            ON f.date_id = d.date_id
+        GROUP BY d.year_month, p.brand
+    )
+SELECT *
+FROM ReviewStats
+ORDER BY year_month DESC, avg_review_rating DESC;
+
+
+[0m18:56:30.014368 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:56:30.483188 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:151bd574-87c1-4a13-b12a-483dbfaa157b&page=queryresults
+[0m18:56:34.145774 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f75c028b-e5ff-4829-b9a7-3d209584c943', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E2E34A3E0>]}
+[0m18:56:34.145774 [info ] [Thread-1 (]: 1 of 2 OK created sql view model just_eat_dataset.metrics_brand ................ [[32mCREATE VIEW (0 processed)[0m in 4.20s]
+[0m18:56:34.145774 [debug] [Thread-1 (]: Finished running node model.just_eat_priyank.metrics_brand
+[0m18:56:34.145774 [debug] [Thread-1 (]: Began running node model.just_eat_priyank.metrics_categories
+[0m18:56:34.145774 [info ] [Thread-1 (]: 2 of 2 START sql view model just_eat_dataset.metrics_categories ................ [RUN]
+[0m18:56:34.145774 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.just_eat_priyank.metrics_brand, now model.just_eat_priyank.metrics_categories)
+[0m18:56:34.161398 [debug] [Thread-1 (]: Began compiling node model.just_eat_priyank.metrics_categories
+[0m18:56:34.166881 [debug] [Thread-1 (]: Writing injected SQL for node "model.just_eat_priyank.metrics_categories"
+[0m18:56:34.169237 [debug] [Thread-1 (]: Began executing node model.just_eat_priyank.metrics_categories
+[0m18:56:34.173282 [debug] [Thread-1 (]: Writing runtime sql for node "model.just_eat_priyank.metrics_categories"
+[0m18:56:34.173282 [debug] [Thread-1 (]: On model.just_eat_priyank.metrics_categories: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "just_eat_priyank", "target_name": "dev", "node_id": "model.just_eat_priyank.metrics_categories"} */
+
+
+  create or replace view `just-eat-451011`.`just_eat_dataset`.`metrics_categories`
+  OPTIONS()
+  as 
+
+WITH
+    ReviewStats
+    AS
+    (
+        SELECT
+            d.year_month,
+            p.category, -- Get category from Dim_Product
+            ROUND(AVG(f.average_rating), 2) AS avg_review_rating,
+            SUM(f.review_count) AS total_reviews
+        FROM just_eat_dataset.Fact_Reviews f
+            LEFT JOIN just_eat_dataset.Dim_Product p
+            ON f.asin = p.asin AND p.is_current = TRUE
+            LEFT JOIN just_eat_dataset.Dim_Date d
+            ON f.date_id = d.date_id
+        GROUP BY d.year_month, p.category
+    )
+SELECT *
+FROM ReviewStats
+ORDER BY year_month DESC, avg_review_rating DESC;
+
+
+[0m18:56:34.173282 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:56:34.553794 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:bbdcd07f-80b6-4af1-9ff5-72a8a58d070b&page=queryresults
+[0m18:56:34.835187 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f75c028b-e5ff-4829-b9a7-3d209584c943', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E2F7D8040>]}
+[0m18:56:34.835187 [info ] [Thread-1 (]: 2 of 2 OK created sql view model just_eat_dataset.metrics_categories ........... [[32mCREATE VIEW (0 processed)[0m in 0.69s]
+[0m18:56:34.835187 [debug] [Thread-1 (]: Finished running node model.just_eat_priyank.metrics_categories
+[0m18:56:34.835187 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:56:34.853443 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:56:34.855201 [debug] [MainThread]: Connection 'list_just-eat-451011' was properly closed.
+[0m18:56:34.856327 [debug] [MainThread]: Connection 'list_just-eat-451011_just_eat_dataset' was properly closed.
+[0m18:56:34.857382 [debug] [MainThread]: Connection 'model.just_eat_priyank.metrics_categories' was properly closed.
+[0m18:56:34.858362 [info ] [MainThread]: 
+[0m18:56:34.860570 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 5.42 seconds (5.42s).
+[0m18:56:34.860881 [debug] [MainThread]: Command end result
+[0m18:56:34.899845 [debug] [MainThread]: Wrote artifact WritableManifest to A:\just_eat_usecase\just_eat_priyank\target\manifest.json
+[0m18:56:34.908924 [debug] [MainThread]: Wrote artifact SemanticManifest to A:\just_eat_usecase\just_eat_priyank\target\semantic_manifest.json
+[0m18:56:34.921696 [debug] [MainThread]: Wrote artifact RunExecutionResult to A:\just_eat_usecase\just_eat_priyank\target\run_results.json
+[0m18:56:34.922698 [info ] [MainThread]: 
+[0m18:56:34.923713 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:56:34.923713 [info ] [MainThread]: 
+[0m18:56:34.923713 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m18:56:34.930565 [debug] [MainThread]: Command `dbt run` succeeded at 18:56:34.930565 after 8.90 seconds
+[0m18:56:34.931625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E1B952410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E1BD53370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E1BC78D30>]}
+[0m18:56:34.932567 [debug] [MainThread]: Flushing usage events
+[0m18:56:35.299110 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:18:22.437288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211D734A080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211D8A76530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211D8A76350>]}
+
+
+============================== 20:18:22.452915 | 1560c1af-9f7b-4539-b0d8-18281cf10c51 ==============================
+[0m20:18:22.452915 [info ] [MainThread]: Running with dbt=1.9.2
+[0m20:18:22.452915 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\pratheepkumaar\\.dbt', 'log_path': 'A:\\just_eat_interview\\just_eat_priyank\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:18:22.476652 [info ] [MainThread]: dbt version: 1.9.2
+[0m20:18:22.476652 [info ] [MainThread]: python version: 3.10.11
+[0m20:18:22.476652 [info ] [MainThread]: python path: A:\just_eat_interview\localdev\Scripts\python.exe
+[0m20:18:22.476652 [info ] [MainThread]: os info: Windows-10-10.0.19044-SP0
+[0m20:18:23.551842 [info ] [MainThread]: Using profiles dir at C:\Users\pratheepkumaar\.dbt
+[0m20:18:23.551842 [info ] [MainThread]: Using profiles.yml file at C:\Users\pratheepkumaar\.dbt\profiles.yml
+[0m20:18:23.551842 [info ] [MainThread]: Using dbt_project.yml file at A:\just_eat_interview\just_eat_priyank\dbt_project.yml
+[0m20:18:23.551842 [info ] [MainThread]: adapter type: bigquery
+[0m20:18:23.551842 [info ] [MainThread]: adapter version: 1.9.1
+[0m20:18:23.764260 [info ] [MainThread]: Configuration:
+[0m20:18:23.764260 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m20:18:23.764260 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m20:18:23.764260 [info ] [MainThread]: Required dependencies:
+[0m20:18:23.764260 [debug] [MainThread]: Executing "git --help"
+[0m20:18:23.826243 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:18:23.826243 [debug] [MainThread]: STDERR: "b''"
+[0m20:18:23.826243 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:18:23.826243 [info ] [MainThread]: Connection:
+[0m20:18:23.826243 [info ] [MainThread]:   method: service-account
+[0m20:18:23.826243 [info ] [MainThread]:   database: just-eat-451011
+[0m20:18:23.826243 [info ] [MainThread]:   execution_project: just-eat-451011
+[0m20:18:23.842256 [info ] [MainThread]:   schema: just_eat_dataset
+[0m20:18:23.844241 [info ] [MainThread]:   location: EU
+[0m20:18:23.845244 [info ] [MainThread]:   priority: interactive
+[0m20:18:23.847243 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m20:18:23.849245 [info ] [MainThread]:   impersonate_service_account: None
+[0m20:18:23.851380 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m20:18:23.852382 [info ] [MainThread]:   job_retries: 1
+[0m20:18:23.854490 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m20:18:23.856008 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m20:18:23.856008 [info ] [MainThread]:   timeout_seconds: 300
+[0m20:18:23.858839 [info ] [MainThread]:   client_id: None
+[0m20:18:23.860841 [info ] [MainThread]:   token_uri: None
+[0m20:18:23.861837 [info ] [MainThread]:   dataproc_region: None
+[0m20:18:23.862840 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m20:18:23.865417 [info ] [MainThread]:   gcs_bucket: None
+[0m20:18:23.867105 [info ] [MainThread]:   dataproc_batch: None
+[0m20:18:23.868685 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m20:18:24.449490 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m20:18:24.449490 [debug] [MainThread]: On debug: select 1 as id
+[0m20:18:24.449490 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:18:24.764698 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:81622209-595f-462d-9ae9-a4d391b0396c&page=queryresults
+[0m20:18:25.056246 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m20:18:25.056246 [info ] [MainThread]: [32mAll checks passed![0m
+[0m20:18:25.056246 [debug] [MainThread]: Command `dbt debug` succeeded at 20:18:25.056246 after 2.73 seconds
+[0m20:18:25.056246 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m20:18:25.056246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211D734A080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211D768DC90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211D8A762F0>]}
+[0m20:18:25.056246 [debug] [MainThread]: Flushing usage events
+[0m20:18:25.425283 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:18:41.860945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021041D4A1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002104367E620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002104367E440>]}
+
+
+============================== 20:18:41.866907 | e0e953d2-b166-401b-a218-70867547a4c4 ==============================
+[0m20:18:41.866907 [info ] [MainThread]: Running with dbt=1.9.2
+[0m20:18:41.868923 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\pratheepkumaar\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'A:\\just_eat_interview\\just_eat_priyank\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --select analytics_layer', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m20:18:43.180723 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e0e953d2-b166-401b-a218-70867547a4c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021042DAB9D0>]}
+[0m20:18:43.321366 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e0e953d2-b166-401b-a218-70867547a4c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002104202E770>]}
+[0m20:18:43.321366 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m20:18:43.959826 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m20:18:45.645640 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:18:45.645640 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:18:45.705528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e0e953d2-b166-401b-a218-70867547a4c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021055234130>]}
+[0m20:18:45.848242 [debug] [MainThread]: Wrote artifact WritableManifest to A:\just_eat_interview\just_eat_priyank\target\manifest.json
+[0m20:18:45.879485 [debug] [MainThread]: Wrote artifact SemanticManifest to A:\just_eat_interview\just_eat_priyank\target\semantic_manifest.json
+[0m20:18:46.000501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e0e953d2-b166-401b-a218-70867547a4c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021054FCA980>]}
+[0m20:18:46.000501 [info ] [MainThread]: Found 4 models, 4 data tests, 491 macros
+[0m20:18:46.000501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e0e953d2-b166-401b-a218-70867547a4c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021054FC8F10>]}
+[0m20:18:46.000501 [info ] [MainThread]: 
+[0m20:18:46.000501 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:18:46.000501 [info ] [MainThread]: 
+[0m20:18:46.012368 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m20:18:46.021585 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_just-eat-451011'
+[0m20:18:46.023592 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:18:46.316074 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_just-eat-451011_just_eat_dataset'
+[0m20:18:46.316074 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:18:46.519378 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e0e953d2-b166-401b-a218-70867547a4c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210548AB010>]}
+[0m20:18:46.519378 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:18:46.519378 [debug] [Thread-1 (]: Began running node model.just_eat_priyank.metrics_brand
+[0m20:18:46.519378 [info ] [Thread-1 (]: 1 of 2 START sql view model just_eat_dataset.metrics_brand ..................... [RUN]
+[0m20:18:46.534859 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.just_eat_priyank.metrics_brand'
+[0m20:18:46.534859 [debug] [Thread-1 (]: Began compiling node model.just_eat_priyank.metrics_brand
+[0m20:18:46.534859 [debug] [Thread-1 (]: Writing injected SQL for node "model.just_eat_priyank.metrics_brand"
+[0m20:18:46.534859 [debug] [Thread-1 (]: Began executing node model.just_eat_priyank.metrics_brand
+[0m20:18:46.592595 [debug] [Thread-1 (]: Writing runtime sql for node "model.just_eat_priyank.metrics_brand"
+[0m20:18:46.594571 [debug] [Thread-1 (]: On model.just_eat_priyank.metrics_brand: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "just_eat_priyank", "target_name": "dev", "node_id": "model.just_eat_priyank.metrics_brand"} */
+
+
+  create or replace view `just-eat-451011`.`just_eat_dataset`.`metrics_brand`
+  OPTIONS()
+  as 
+
+WITH
+    ReviewStats
+    AS
+    (
+        SELECT
+            d.year_month,
+            p.brand, -- Get brand from Dim_Product
+            ROUND(AVG(f.average_rating), 2) AS avg_review_rating,
+            SUM(f.review_count) AS total_reviews
+        FROM just_eat_dataset.Fact_Reviews f
+            LEFT JOIN just_eat_dataset.Dim_Product p
+            ON f.asin = p.asin AND p.is_current = TRUE
+            LEFT JOIN just_eat_dataset.Dim_Date d
+            ON f.date_id = d.date_id
+        GROUP BY d.year_month, p.brand
+    )
+SELECT *
+FROM ReviewStats
+ORDER BY year_month DESC, avg_review_rating DESC;
+
+
+[0m20:18:46.595572 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:18:46.943254 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:4de492c8-7b4d-4875-9eef-961c4a8a86b5&page=queryresults
+[0m20:18:47.333498 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e0e953d2-b166-401b-a218-70867547a4c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210420851E0>]}
+[0m20:18:47.333498 [info ] [Thread-1 (]: 1 of 2 OK created sql view model just_eat_dataset.metrics_brand ................ [[32mCREATE VIEW (0 processed)[0m in 0.80s]
+[0m20:18:47.333498 [debug] [Thread-1 (]: Finished running node model.just_eat_priyank.metrics_brand
+[0m20:18:47.333498 [debug] [Thread-1 (]: Began running node model.just_eat_priyank.metrics_categories
+[0m20:18:47.333498 [info ] [Thread-1 (]: 2 of 2 START sql view model just_eat_dataset.metrics_categories ................ [RUN]
+[0m20:18:47.351293 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.just_eat_priyank.metrics_brand, now model.just_eat_priyank.metrics_categories)
+[0m20:18:47.352597 [debug] [Thread-1 (]: Began compiling node model.just_eat_priyank.metrics_categories
+[0m20:18:47.360533 [debug] [Thread-1 (]: Writing injected SQL for node "model.just_eat_priyank.metrics_categories"
+[0m20:18:47.362934 [debug] [Thread-1 (]: Began executing node model.just_eat_priyank.metrics_categories
+[0m20:18:47.370624 [debug] [Thread-1 (]: Writing runtime sql for node "model.just_eat_priyank.metrics_categories"
+[0m20:18:47.372811 [debug] [Thread-1 (]: On model.just_eat_priyank.metrics_categories: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "just_eat_priyank", "target_name": "dev", "node_id": "model.just_eat_priyank.metrics_categories"} */
+
+
+  create or replace view `just-eat-451011`.`just_eat_dataset`.`metrics_categories`
+  OPTIONS()
+  as 
+
+WITH
+    ReviewStats
+    AS
+    (
+        SELECT
+            d.year_month,
+            p.category, -- Get category from Dim_Product
+            ROUND(AVG(f.average_rating), 2) AS avg_review_rating,
+            SUM(f.review_count) AS total_reviews
+        FROM just_eat_dataset.Fact_Reviews f
+            LEFT JOIN just_eat_dataset.Dim_Product p
+            ON f.asin = p.asin AND p.is_current = TRUE
+            LEFT JOIN just_eat_dataset.Dim_Date d
+            ON f.date_id = d.date_id
+        GROUP BY d.year_month, p.category
+    )
+SELECT *
+FROM ReviewStats
+ORDER BY year_month DESC, avg_review_rating DESC;
+
+
+[0m20:18:47.373419 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:18:47.645966 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=just-eat-451011&j=bq:EU:0a31e00b-0c64-4fd9-9768-0f2027c96560&page=queryresults
+[0m20:18:47.913424 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e0e953d2-b166-401b-a218-70867547a4c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210419B2020>]}
+[0m20:18:47.913424 [info ] [Thread-1 (]: 2 of 2 OK created sql view model just_eat_dataset.metrics_categories ........... [[32mCREATE VIEW (0 processed)[0m in 0.56s]
+[0m20:18:47.913424 [debug] [Thread-1 (]: Finished running node model.just_eat_priyank.metrics_categories
+[0m20:18:47.913424 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m20:18:47.928886 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:18:47.928886 [debug] [MainThread]: Connection 'list_just-eat-451011' was properly closed.
+[0m20:18:47.928886 [debug] [MainThread]: Connection 'list_just-eat-451011_just_eat_dataset' was properly closed.
+[0m20:18:47.928886 [debug] [MainThread]: Connection 'model.just_eat_priyank.metrics_categories' was properly closed.
+[0m20:18:47.928886 [info ] [MainThread]: 
+[0m20:18:47.933895 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 1.92 seconds (1.92s).
+[0m20:18:47.938528 [debug] [MainThread]: Command end result
+[0m20:18:47.973631 [debug] [MainThread]: Wrote artifact WritableManifest to A:\just_eat_interview\just_eat_priyank\target\manifest.json
+[0m20:18:47.973631 [debug] [MainThread]: Wrote artifact SemanticManifest to A:\just_eat_interview\just_eat_priyank\target\semantic_manifest.json
+[0m20:18:47.989568 [debug] [MainThread]: Wrote artifact RunExecutionResult to A:\just_eat_interview\just_eat_priyank\target\run_results.json
+[0m20:18:47.990407 [info ] [MainThread]: 
+[0m20:18:47.992300 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:18:47.992300 [info ] [MainThread]: 
+[0m20:18:47.992300 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m20:18:47.992300 [debug] [MainThread]: Command `dbt run` succeeded at 20:18:47.992300 after 6.27 seconds
+[0m20:18:47.992300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021041D4A1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002105520D960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210420883A0>]}
+[0m20:18:47.992300 [debug] [MainThread]: Flushing usage events
+[0m20:18:48.390478 [debug] [MainThread]: An error was encountered while trying to flush usage events
